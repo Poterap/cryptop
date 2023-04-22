@@ -1,0 +1,13 @@
+INFO:root:API status request received
+{"timestamp":"2023-04-11 15:41:32,843", "level":"INFO", "function":"get_status", "message":"Received GET request for /status"}
+{"timestamp":"2023-04-11 15:46:40,354", "level":"ERROR", "function":"update_data", "message":"Error: Error connecting to Binance API: 400 Client Error: Bad Request for url: https://api.binance.com/api/v3/klines?symbol=LEOUSDT&interval=1m&startTime=1230940800000&endTime=1681220799962&limit=1000"}
+{"timestamp":"2023-04-11 15:48:12,753", "level":"INFO", "function":"update_data", "message":"Data updated successfully"}
+{"timestamp":"2023-04-11 15:53:20,746", "level":"INFO", "function":"update_data", "message":"Data updated successfully"}
+{"timestamp":"2023-04-11 16:28:20,813", "level":"INFO", "function":"update_data", "message":"Data updated successfully"}
+{"timestamp":"2023-04-18 12:46:43,795", "level":"INFO", "function":"get_status", "message":"Received GET request for /status"}
+{"timestamp":"2023-04-18 12:47:55,508", "level":"INFO", "function":"get_status", "message":"Received GET request for /status"}
+{"timestamp":"2023-04-21 15:03:18,651", "level":"INFO", "function":"update_data", "message":"Data for btc updated successfully"}
+{"timestamp":"2023-04-21 15:03:32,681", "level":"INFO", "function":"update_data", "message":"Data for btc updated successfully"}
+{"timestamp":"2023-04-21 16:45:34,794", "level":"ERROR", "function":"update_data", "message":"Error: Error connecting to Binance API: 400 Client Error: Bad Request for url: https://api.binance.com/api/v3/klines?symbol=ALCUSDT&interval=1m&startTime=1230940800000&endTime=1682088333786&limit=1000"}
+{"timestamp":"2023-04-21 16:46:50,896", "level":"INFO", "function":"update_data", "message":"Data updated successfully for all cryptocurrencies"}
+{"timestamp":"2023-04-22 10:16:55,470", "level":"INFO", "function":"update_data", "message":"Data for btc updated successfully"}
