@@ -1,0 +1,1628 @@
+- name: 01CYBERATON SA
+  symbol: 01C
+- name: MAGNA POLONIA SA
+  symbol: 06N
+- name: OCTAVA SA
+  symbol: 08N
+- name: 11 BIT STUDIOS SA
+  symbol: 11B
+- name: ATAL SA
+  symbol: 1AT
+- name: 2C PARTNERS SA
+  symbol: 2CP
+- name: 3R GAMES SA
+  symbol: 3RG
+- name: 4MOBILITY SA
+  symbol: 4MB
+- name: 4MASS SA
+  symbol: 4MS
+- name: 7FIT SA
+  symbol: 7FT
+- name: 7LEVELS SA
+  symbol: 7LV
+- name: ARTS ALLIANCE SA
+  symbol: AAS
+- name: ALTA SA
+  symbol: AAT
+- name: AB SA
+  symbol: ABE
+- name: ABAK SA
+  symbol: ABK
+- name: ASSECO BUSINESS SOLUTIONS SA
+  symbol: ABS
+- name: ACARTUS SA
+  symbol: ACA
+- name: AC SA
+  symbol: ACG
+- name: ASSECO POLAND SA
+  symbol: ACP
+- name: ACTION SA
+  symbol: ACT
+- name: ADIUVO INVESTMENTS SA
+  symbol: ADV
+- name: ADATEX SA
+  symbol: ADX
+- name: HYDROPRESS SE
+  symbol: AER
+- name: AKCEPT FINANCE SA
+  symbol: AFC
+- name: AFORTI HOLDING SA
+  symbol: AFH
+- name: AGROLIGA GROUP PLC
+  symbol: AGL
+- name: AGORA SA
+  symbol: AGO
+- name: AGROMEP SA
+  symbol: AGP
+- name: AGROTON GROUP OF COMPANIES
+  symbol: AGT
+- name: ABS INVESTMENT SA
+  symbol: AIN
+- name: AITON CALDWELL SA
+  symbol: AIT
+- name: ALLEGRO.EU SA
+  symbol: ALE
+- name: ALL IN! GAMES SA
+  symbol: ALG
+- name: ALTUS SA
+  symbol: ALI
+- name: AILLERON SA
+  symbol: ALL
+- name: ALIOR BANK SA
+  symbol: ALR
+- name: ALV
+  symbol: ALV
+- name: GRUPA AMBRA SA
+  symbol: AMB
+- name: AMICA SA
+  symbol: AMC
+- name: ALUMETAL SA
+  symbol: AML
+- name: ASMODEV SA
+  symbol: AMV
+- name: ANSWEAR.COM SA
+  symbol: ANR
+- name: ANALIZY ONLINE SA
+  symbol: AOL
+- name: APANET SA
+  symbol: APA
+- name: APOLLO CAPITAL ASI SA
+  symbol: APC
+- name: APS ENERGIA SA
+  symbol: APE
+- name: AMPLI SA
+  symbol: APL
+- name: APLISENS SA
+  symbol: APN
+- name: AUTO PARTNER SA
+  symbol: APR
+- name: AUTOMATYKA POMIARY STEROWANIE SA
+  symbol: APS
+- name: GRUPA APATOR SA
+  symbol: APT
+- name: AQUA SA
+  symbol: AQA
+- name: AQT WATER SA
+  symbol: AQT
+- name: AQUA SA
+  symbol: AQU
+- name: ARENA.PL SA
+  symbol: ARE
+- name: ART GAMES STUDIO SA
+  symbol: ARG
+- name: ARCHICOM SA
+  symbol: ARH
+- name: AGENCJA ROZWOJU INNOWACJI SA
+  symbol: ARI
+- name: ARTERIA SA
+  symbol: ARR
+- name: ARTIFEX MUNDI SA
+  symbol: ART
+- name: APIS SA
+  symbol: ASA
+- name: ASBISC ENTERPRISES PLC
+  symbol: ASB
+- name: ASSECO SOUTH EASTERN EUROPE SA
+  symbol: ASE
+- name: ASM GROUP SA
+  symbol: ASM
+- name: FINCE HOLDING SA
+  symbol: ASP
+- name: ASTRO SA
+  symbol: ASR
+- name: ASTARTA HOLDING NV
+  symbol: AST
+- name: ATC CARGO SA
+  symbol: ATA
+- name: ARCTIC PAPER SA
+  symbol: ATC
+- name: ATENDE SA
+  symbol: ATD
+- name: ATM GRUPA SA
+  symbol: ATG
+- name: ATOMIC JELLY SA
+  symbol: ATJ
+- name: ATLAS ESTATES LIMITED
+  symbol: ATL
+- name: ATON HT SA
+  symbol: ATO
+- name: ATLANTA POLAND SA
+  symbol: ATP
+- name: ATREM SA
+  symbol: ATR
+- name: ATLANTIS SE
+  symbol: ATS
+- name: GRUPA AZOTY SA
+  symbol: ATT
+- name: AUXILIA SA
+  symbol: AUX
+- name: ADVERTIGO SA
+  symbol: AVE
+- name: AIRWAY MEDIX SA
+  symbol: AWM
+- name: AZTEC INTERNATIONAL SA
+  symbol: AZC
+- name: BRAND24 SA
+  symbol: B24
+- name: BRITISH AUTOMOTIVE HOLDING SA
+  symbol: BAH
+- name: BBI DEVELOPMENT SA
+  symbol: BBD
+- name: BOOMBIT SA
+  symbol: BBT
+- name: BALTIC CERAMICS INVESMENTS SA
+  symbol: BCI
+- name: BETACOM SA
+  symbol: BCM
+- name: BIG CHEESE STUDIO SA
+  symbol: BCS
+- name: BIOCELTIX SA
+  symbol: BCX
+- name: BROAD GATE SA
+  symbol: BDG
+- name: BUDIMEX SA
+  symbol: BDX
+- name: "ELEKTROCIEP\u0141OWNIA B\u0118DZIN SA"
+  symbol: BDZ
+- name: BEEIN SA
+  symbol: BEE
+- name: BIOMASS ENERGY PROJECT SA
+  symbol: BEP
+- name: BRG SA
+  symbol: BER
+- name: BIOFACTORY SA
+  symbol: BFC
+- name: BENEFIT SYSTEMS SA
+  symbol: BFT
+- name: BIOGENED SA
+  symbol: BGD
+- name: BANK HANDLOWY W WARSZAWIE SA
+  symbol: BHW
+- name: BINARY HELIX SA
+  symbol: BHX
+- name: BIOTON SA
+  symbol: BIO
+- name: BIO PLANET SA
+  symbol: BIP
+- name: BAKED GAMES SA
+  symbol: BKD
+- name: BLOOBER TEAM SA
+  symbol: BLO
+- name: BALTICON SA
+  symbol: BLT
+- name: BUMECH SA
+  symbol: BMC
+- name: "BIOMED-LUBLIN WYTW\xD3RNIA SUROWIC I SZCZEPIONEK SA"
+  symbol: BML
+- name: BMW
+  symbol: BMW
+- name: BIOMAXIMA SA
+  symbol: BMX
+- name: BNP PARIBAS BANK POLSKA SA
+  symbol: BNP
+- name: "BANK OCHRONY \u015ARODOWISKA SA"
+  symbol: BOS
+- name: BOWIM SA
+  symbol: BOW
+- name: INTERFARMED SA
+  symbol: BPC
+- name: BLACK POINT SA
+  symbol: BPN
+- name: BRASTER SA
+  symbol: BRA
+- name: BERLING SA
+  symbol: BRG
+- name: BERG HOLDING SA
+  symbol: BRH
+- name: "BROWAR CZARNK\xD3W SA"
+  symbol: BRO
+- name: BLACK ROSE PROJECTS SA
+  symbol: BRP
+- name: BORYSZEW SA
+  symbol: BRS
+- name: BRAS SA
+  symbol: BSA
+- name: BRIDGE SOLUTIONS HUB SA
+  symbol: BSH
+- name: BEST SA
+  symbol: BST
+- name: BTC STUDIOS SA
+  symbol: BTC
+- name: BLUE TAX GROUP SA
+  symbol: BTG
+- name: BIZTECH KONSULTING SA
+  symbol: BTK
+- name: FORBUILD SA
+  symbol: BTX
+- name: BVT SA
+  symbol: BVT
+- name: CARLSON INVESTMENTS SA
+  symbol: CAI
+- name: INTER CARS SA
+  symbol: CAR
+- name: CAVATINA HOLDING SA
+  symbol: CAV
+- name: CANNABIS POLAND SA
+  symbol: CBD
+- name: CCC SA
+  symbol: CCC
+- name: CLEAN & CARBON ENERGY SA
+  symbol: CCE
+- name: CONSTANCE CARE SA
+  symbol: CCR
+- name: CYFROWE CENTRUM SERWISOWE SA
+  symbol: CCS
+- name: CDA SA
+  symbol: CDA
+- name: CDRL SA
+  symbol: CDL
+- name: CD PROJEKT SA
+  symbol: CDR
+- name: CODEADDICT SA
+  symbol: CDT
+- name: CEZ AS
+  symbol: CEZ
+- name: CREATIVEFORGE GAMES SA
+  symbol: CFG
+- name: CFI HOLDING SA
+  symbol: CFI
+- name: CENTRUM FINANSOWE SA
+  symbol: CFS
+- name: CHERRYPICK GAMES SA
+  symbol: CHP
+- name: CIECH SA
+  symbol: CIE
+- name: CI GAMES SE
+  symbol: CIG
+- name: CONSOLE LABS SA
+  symbol: CLA
+- name: COLUMBUS ENERGY SA
+  symbol: CLC
+- name: CLOUD TECHNOLOGIES SA
+  symbol: CLD
+- name: COAL ENERGY SA
+  symbol: CLE
+- name: CELON PHARMA SA
+  symbol: CLN
+- name: COMECO SA
+  symbol: CMC
+- name: CM INTERNATIONAL SA
+  symbol: CMI
+- name: COMP SA
+  symbol: CMP
+- name: COMARCH SA
+  symbol: CMR
+- name: CENTRUM NOWOCZESNYCH TECHNOLOGII SA
+  symbol: CNT
+- name: COGNOR HOLDING SA
+  symbol: COG
+- name: COSMA GROUP SA
+  symbol: COS
+- name: CAPITAL PARTNERS SA
+  symbol: CPA
+- name: CPD SA
+  symbol: CPD
+- name: CAPITAL PARK SA
+  symbol: CPG
+- name: COMPERIA.PL SA
+  symbol: CPL
+- name: COMPREMUM SA
+  symbol: CPR
+- name: CYFROWY POLSAT SA
+  symbol: CPS
+- name: CARBON STUDIO SA
+  symbol: CRB
+- name: CARPATHIA CAPITAL ASI SA
+  symbol: CRC
+- name: CREOTECH INSTRUMENTS SA
+  symbol: CRI
+- name: CREEPY JAR SA
+  symbol: CRJ
+- name: PZ CORMAY SA
+  symbol: CRM
+- name: CEREAL PLANET PLC
+  symbol: CRP
+- name: COPERNICUS SECURITIES SA
+  symbol: CRS
+- name: CASPAR ASSET MANAGEMENT SA
+  symbol: CSR
+- name: CENOSPHERES TRADE & ENGINEERING SA
+  symbol: CTE
+- name: CENTURION FINANCE ASI SA
+  symbol: CTF
+- name: CITY SERVICE AS
+  symbol: CTS
+- name: CAPTOR THERAPEUTICS SA
+  symbol: CTX
+- name: "CENTRUM WSPIERANIA PROJEKT\xD3W EUROPEJSKICH SA"
+  symbol: CWP
+- name: CZERWONA TOREBKA SA
+  symbol: CZT
+- name: DADELO SA
+  symbol: DAD
+- name: DATAWALK SA
+  symbol: DAT
+- name: "FIRMA OPONIARSKA D\u0118BICA SA"
+  symbol: DBC
+- name: DB ENERGY SA
+  symbol: DBE
+- name: DBE1
+  symbol: DBE1
+- name: DB ENERGY SA - PDA
+  symbol: DBEA
+- name: "DOLNO\u015AL\u0104SKIE CENTRUM DEWELOPERSKIE SA"
+  symbol: DCD
+- name: DECORA SA
+  symbol: DCR
+- name: DRAW DISTANCE SA
+  symbol: DDI
+- name: DETALION GAMES SA
+  symbol: DEG
+- name: DEKPOL SA
+  symbol: DEK
+- name: DELKO SA
+  symbol: DEL
+- name: DEVO ENERGY SA
+  symbol: DEV
+- name: DGA SA
+  symbol: DGA
+- name: DRAGO ENTERTAINMENT SA
+  symbol: DGE
+- name: DG-NET SA
+  symbol: DGN
+- name: DIGITAL NETWORK SA
+  symbol: DIG
+- name: DEKTRA SA
+  symbol: DKR
+- name: DINO POLSKA SA
+  symbol: DNP
+- name: DANKS EUROPEJSKIE CENTRUM DORADZTWA PODATKOWEGO SA
+  symbol: DNS
+- name: DOOK SA
+  symbol: DOK
+- name: DOM DEVELOPMENT SA
+  symbol: DOM
+- name: DOWNSTREAM SA
+  symbol: DOW
+- name: DROZAPOL-PROFIL SA
+  symbol: DPL
+- name: DREWEX
+  symbol: DRE
+- name: DR.FINANCE SA
+  symbol: DRF
+- name: DRAGEUS GAMES SA
+  symbol: DRG
+- name: DIGITREE GROUP SA
+  symbol: DTR
+- name: DITIX SA
+  symbol: DTX
+- name: DUALITY SA
+  symbol: DUA
+- name: DEVELIA SA
+  symbol: DVL
+- name: ESOTIQ & HENDERSON SA
+  symbol: EAH
+- name: AMREST HOLDINGS SE
+  symbol: EAT
+- name: EKOBOX SA
+  symbol: EBX
+- name: ECC GAMES SA
+  symbol: ECC
+- name: ECHO INVESTMENT SA
+  symbol: ECH
+- name: EUROSNACK SA
+  symbol: ECK
+- name: EASYCALL.PL SA
+  symbol: ECL
+- name: ECOTECH SA
+  symbol: ECO
+- name: ELECTROCERAMICS SA
+  symbol: ECR
+- name: ECO5TECH SA
+  symbol: ECT
+- name: ED INVEST SA
+  symbol: EDI
+- name: EDISON SA
+  symbol: EDN
+- name: EKIPA HOLDING SA
+  symbol: EEE
+- name: EKO EXPORT SA
+  symbol: EEX
+- name: EUROPEJSKI FUNDUSZ ENERGII SA
+  symbol: EFE
+- name: KORPORACJA GOSPODARCZA EFEKT SA
+  symbol: EFK
+- name: "EKOPOL G\xD3RNO\u015AL\u0104SKI HOLDING SA"
+  symbol: EGH
+- name: EUROHOLD BULGARIA AD
+  symbol: EHG
+- name: EKO-OZE SA
+  symbol: EKE
+- name: "PRZEDSI\u0118BIORSTWO ELEKTROMONTA\u017BOWE ELKOP SA"
+  symbol: EKP
+- name: E-KIOSK SA
+  symbol: EKS
+- name: CARBON GROUP SA
+  symbol: ELM
+- name: ELQ SA
+  symbol: ELQ
+- name: ELEKTROTIM SA
+  symbol: ELT
+- name: "ZAK\u0141ADY URZ\u0104DZE\u0143 KOMPUTEROWYCH ELZAB SA"
+  symbol: ELZ
+- name: ELEMENTAL ASIA SA
+  symbol: EMA
+- name: EMC INSTYTUT MEDYCZNY SA
+  symbol: EMC
+- name: EMPLOCITY SA
+  symbol: EMP
+- name: E-MUZYKA SA
+  symbol: EMU
+- name: ENEA SA
+  symbol: ENA
+- name: CENTRUM MEDYCZNE ENEL-MED SA
+  symbol: ENE
+- name: ENERGA SA
+  symbol: ENG
+- name: ENERGOINSTAL SA
+  symbol: ENI
+- name: ENERGOAPARATURA SA
+  symbol: ENP
+- name: ENTER AIR SA
+  symbol: ENT
+- name: EO NETWORKS SA
+  symbol: EON
+- name: "PRZEDSI\u0118BIORSTWO ROB\xD3T IN\u017BYNIERYJNYCH EKOPARK SA"
+  symbol: EPR
+- name: ERATO ENERGY SA
+  symbol: ERA
+- name: ERBUD SA
+  symbol: ERB
+- name: ERG SA
+  symbol: ERG
+- name: E-SHOPPING GROUP SA
+  symbol: ESG
+- name: ESKIMOS SA
+  symbol: ESK
+- name: "ENEFI ENERGIAHAT\xC9KONYS\xC1GI NYRT"
+  symbol: EST
+- name: EUROTEL SA
+  symbol: ETL
+- name: EURO-TAX.PL SA
+  symbol: ETX
+- name: "EUROPEJSKIE CENTRUM ODSZKODOWA\u0143 SA"
+  symbol: EUC
+- name: EUROCASH SA
+  symbol: EUR
+- name: EXAMOBILE SA
+  symbol: EXA
+- name: EXCELLENCE SA
+  symbol: EXC
+- name: E-XIM IT SA
+  symbol: EXM
+- name: THE FARM 51 GROUP SA
+  symbol: F51
+- name: FEERUM SA
+  symbol: FEE
+- name: FEMION TECHNOLOGY SA
+  symbol: FEM
+- name: FERRUM SA
+  symbol: FER
+- name: FAST FINANCE SA
+  symbol: FFI
+- name: FUNDUSZ HIPOTECZNY DOM SA
+  symbol: FHD
+- name: FIGENE CAPITAL SA
+  symbol: FIG
+- name: FABRYKA KONSTRUKCJI DREWNIANYCH SA
+  symbol: FKD
+- name: FALCON GAMES SA
+  symbol: FLG
+- name: ONE SA
+  symbol: FMG
+- name: FON SE
+  symbol: FON
+- name: FOREVER ENTERTAIMENT SA
+  symbol: FOR
+- name: FORPOSTA SA
+  symbol: FPO
+- name: FERRO SA
+  symbol: FRO
+- name: FROZEN WAY SA
+  symbol: FRW
+- name: "FABRYKA SPRZ\u0118TU I NARZ\u0118DZI G\xD3RNICZYCH FASING SA"
+  symbol: FSG
+- name: FABRYKI MEBLI FORTE SA
+  symbol: FTE
+- name: FINTECH SA
+  symbol: FTH
+- name: FOOTHILLS  SA
+  symbol: FTL
+- name: FOTO VOLT EKO ENERGIA SA
+  symbol: FVE
+- name: GALVO SA
+  symbol: GAL
+- name: GARIN SA
+  symbol: GAR
+- name: CAPITEA  SA
+  symbol: GBK
+- name: GAMEDUST SA
+  symbol: GDC
+- name: GRENEVIA SA
+  symbol: GEA
+- name: GENOMED SA
+  symbol: GEN
+- name: GLOBAL HYDROGEN SA
+  symbol: GHY
+- name: GAMING FACTORY SA
+  symbol: GIF
+- name: GI GROUP POLAND SA
+  symbol: GIG
+- name: "GRUPA KAPITA\u0141OWA IMMOBILE SA"
+  symbol: GKI
+- name: GKS GIEKSA KATOWICE SA
+  symbol: GKS
+- name: GLOBAL COSMED SA
+  symbol: GLC
+- name: GAMES BOX SA
+  symbol: GMB
+- name: GREMI MEDIA SA
+  symbol: GME
+- name: GENOMTEC SA
+  symbol: GMT
+- name: GAMIVO SA
+  symbol: GMV
+- name: GRUPA MODNE ZAKUPY SA
+  symbol: GMZ
+- name: G-ENERGY SA
+  symbol: GNG
+- name: MEDICAL CANNABIS SA
+  symbol: GNR
+- name: GOBARTO SA
+  symbol: GOB
+- name: GOLAB SA
+  symbol: GOL
+- name: GAMES OPERATORS SA
+  symbol: GOP
+- name: GOVENA LIGHTING SA
+  symbol: GOV
+- name: ADVANCED GRAPHENE PRODUCTS SA
+  symbol: GPH
+- name: GRUPA PRACUJ SA
+  symbol: GPP
+- name: "GIE\u0141DA PAPIER\xD3W WARTO\u015ACIOWYCH W WARSZAWIE SA"
+  symbol: GPW
+- name: GRUPA RECYKL SA
+  symbol: GRC
+- name: MVA GREEN ENERGY SA
+  symbol: GRE
+- name: GREMPCO SA
+  symbol: GRM
+- name: GRODNO SA
+  symbol: GRN
+- name: GREENX METALS LIMITED
+  symbol: GRX
+- name: GLOBE TRADE CENTRE SA
+  symbol: GTC
+- name: GO24.PL SA
+  symbol: GTF
+- name: GETIN HOLDING SA
+  symbol: GTN
+- name: GEO-TERM POLSKA SA
+  symbol: GTP
+- name: GEOTRANS SA
+  symbol: GTS
+- name: GRUPA TRINITY SA
+  symbol: GTY
+- name: GENXONE SA
+  symbol: GX1
+- name: HYDROTOR SA
+  symbol: HDR
+- name: HELIO SA
+  symbol: HEL
+- name: HOLLYWOOD SA
+  symbol: HLD
+- name: HM INWEST SA
+  symbol: HMI
+- name: HEMP & HEALTH SA
+  symbol: HMP
+- name: HORTICO SA
+  symbol: HOR
+- name: HIPROMINE SA
+  symbol: HPM
+- name: HYDRAPRES SA
+  symbol: HPS
+- name: GRUPA HRC SA
+  symbol: HRC
+- name: HORNIGOLD REIT SA
+  symbol: HRL
+- name: HARPER HYGIENICS SA
+  symbol: HRP
+- name: HERKULES SA
+  symbol: HRS
+- name: HURTIMEX SA
+  symbol: HRT
+- name: HUB.TECH SA
+  symbol: HUB
+- name: HUUUGE INC
+  symbol: HUG
+- name: HYDRA GAMES SA
+  symbol: HYD
+- name: IBC POLSKA F&P SA
+  symbol: IBC
+- name: NOBLE FINANCIALS SA
+  symbol: IBS
+- name: INCANA SA
+  symbol: ICA
+- name: INTERCAPITAL PROPERTY DEVELOPMENT COMPANY
+  symbol: ICD
+- name: MEDINICE SA
+  symbol: ICE
+- name: ICE CODE GAMES SA
+  symbol: ICG
+- name: INDYGOTECH MINERALS SA
+  symbol: IDG
+- name: IDH DEVELOPMENT SA
+  symbol: IDH
+- name: IDM SA
+  symbol: IDM
+- name: INFRA SA
+  symbol: IFA
+- name: INVESTMENT FRIENDS CAPITAL SE
+  symbol: IFC
+- name: IFIRMA SA
+  symbol: IFI
+- name: INVESTMENT FRIENDS SE
+  symbol: IFR
+- name: INNO-GENE SA
+  symbol: IGN
+- name: IGORIA TRADE SA
+  symbol: IGT
+- name: IMMOFINANZ AG
+  symbol: IIA
+- name: IMC SA
+  symbol: IMC
+- name: IMMERSION GAMES SA
+  symbol: IMG
+- name: IMPERIO ASI SA
+  symbol: IMP
+- name: INTERMARUM SA
+  symbol: IMR
+- name: IMS SA
+  symbol: IMS
+- name: INC SA
+  symbol: INC
+- name: "ING BANK \u015AL\u0104SKI SA"
+  symbol: ING
+- name: "INSTAL KRAK\xD3W SA"
+  symbol: INK
+- name: INTROL SA
+  symbol: INL
+- name: INVENTIONMED SA
+  symbol: INM
+- name: INPRO SA
+  symbol: INP
+- name: INDOS SA
+  symbol: INS
+- name: INTERNITY SA
+  symbol: INT
+- name: IPOPEMA SECURITIES SA
+  symbol: IPE
+- name: INTERSPORT POLSKA SA
+  symbol: IPO
+- name: IPOGPARPA
+  symbol: IPOGPARPA.PL
+- name: IMAGE POWER SA
+  symbol: IPW
+- name: INTER RAO LIETUVA AB
+  symbol: IRL
+- name: INTERBUD-LUBLIN SA
+  symbol: ITB
+- name: INTELIWISE SA
+  symbol: ITL
+- name: ITX
+  symbol: ITX
+- name: INTERNET UNION SA
+  symbol: IUS
+- name: INVESTEKO SA
+  symbol: IVE
+- name: INCUVO SA
+  symbol: IVO
+- name: IRON WOLF STUDIO SA
+  symbol: IWS
+- name: IZOBLOK SA
+  symbol: IZB
+- name: IZOLACJA JAROCIN SA
+  symbol: IZO
+- name: IZOSTAL SA
+  symbol: IZS
+- name: JUJUBEE SA
+  symbol: JJB
+- name: JMT
+  symbol: JMT
+- name: JRC GROUP SA
+  symbol: JRC
+- name: JR HOLDING ASI SA
+  symbol: JRH
+- name: "JASTRZ\u0118BSKA SP\xD3\u0141KA W\u0118GLOWA SA"
+  symbol: JSW
+- name: JWW INVEST SA
+  symbol: JWW
+- name: K2 HOLDING SA
+  symbol: K2H
+- name: KOOL2PLAY SA
+  symbol: K2P
+- name: KBJ SA
+  symbol: KBJ
+- name: KLABATER SA
+  symbol: KBT
+- name: KRAKCHEMIA SA
+  symbol: KCH
+- name: KCI SA
+  symbol: KCI
+- name: KDM SHIPPING PUBLIC LIMITED
+  symbol: KDM
+- name: KERNEL HOLDING SA
+  symbol: KER
+- name: "KGHM POLSKA MIED\u0179 SA"
+  symbol: KGH
+- name: KGL SA
+  symbol: KGL
+- name: "ZESP\xD3\u0141 ELEKTROCIEP\u0141OWNI WROC\u0141AWSKICH KOGENERACJA SA"
+  symbol: KGN
+- name: PRIMA PARK SA
+  symbol: KIN
+- name: KLON SA
+  symbol: KLN
+- name: KANCELARIA MEDIUS SA
+  symbol: KME
+- name: "PRZEDSI\u0118BIORSTWO PRODUKCYJNO-HANDLOWE KOMPAP SA"
+  symbol: KMP
+- name: KOMPUTRONIK SA
+  symbol: KOM
+- name: KORBANK SA
+  symbol: KOR
+- name: KUPIEC SA
+  symbol: KPC
+- name: "KOSZALI\u0143SKIE PRZEDSI\u0118BIORSTWO PRZEMYS\u0141U DRZEWNEGO SA"
+  symbol: KPD
+- name: KANCELARIA PRAWNA-INKASO WEC SA
+  symbol: KPI
+- name: KINO POLSKA TV SA
+  symbol: KPL
+- name: KREDYT INKASO SA
+  symbol: KRI
+- name: KRKA DD
+  symbol: KRK
+- name: KRUK SA
+  symbol: KRU
+- name: KSG AGRO SA
+  symbol: KSG
+- name: "GRUPA K\u0118TY SA"
+  symbol: KTY
+- name: KUBOTA SA
+  symbol: KUB
+- name: KRYNICA VITAMIN SA
+  symbol: KVT
+- name: LABO PRINT SA
+  symbol: LAB
+- name: LOKATY BUDOWLANE SA
+  symbol: LBD
+- name: LIBET SA
+  symbol: LBT
+- name: LUBAWA SA
+  symbol: LBW
+- name: LABOCANNA SA
+  symbol: LCN
+- name: LEGIMI SA
+  symbol: LEG
+- name: LENA LIGHTING SA
+  symbol: LEN
+- name: LESS SA
+  symbol: LES
+- name: LETUS CAPITAL SA
+  symbol: LET
+- name: LOGINTRADE SA
+  symbol: LGT
+- name: LOKUM DEWELOPER SA
+  symbol: LKD
+- name: LIVE MOTION GAMES SA
+  symbol: LMG
+- name: LPP SA
+  symbol: LPP
+- name: LAUREN PESO POLSKA SA
+  symbol: LPS
+- name: LARK.PL SA
+  symbol: LRK
+- name: LARQ SA
+  symbol: LRQ
+- name: MODULE TECHNOLOGIES SA
+  symbol: LSH
+- name: LSI SOFTWARE SA
+  symbol: LSI
+- name: LONGTERM GAMES S.A.
+  symbol: LTM
+- name: LENTEX SA
+  symbol: LTX
+- name: LUDUS SA
+  symbol: LUD
+- name: LUG SA
+  symbol: LUG
+- name: LUKARDI SA
+  symbol: LUK
+- name: LIVECHAT SOFTWARE SA
+  symbol: LVC
+- name: "LUBELSKI W\u0118GIEL BOGDANKA SA"
+  symbol: LWB
+- name: M4B SA
+  symbol: M4B
+- name: MABION SA
+  symbol: MAB
+- name: MADKOM SA
+  symbol: MAD
+- name: MAKARONY POLSKIE SA
+  symbol: MAK
+- name: MANYDEV STUDIO SE
+  symbol: MAN
+- name: MAXIMUS SA
+  symbol: MAX
+- name: MBF GROUP SA
+  symbol: MBF
+- name: MBG
+  symbol: MBG
+- name: MBANK SA
+  symbol: MBK
+- name: MO-BRUK SA
+  symbol: MBR
+- name: MARIE BRIZARDS WINE & SPIRITS SA
+  symbol: MBW
+- name: MYCODERN SA
+  symbol: MCD
+- name: MCI CAPITAL ASI SA
+  symbol: MCI
+- name: MERCOR SA
+  symbol: MCR
+- name: MEDAPP SA
+  symbol: MDA
+- name: MEDICOFARMA BIOTECH SA
+  symbol: MDB
+- name: MEDICALGORITHMICS SA
+  symbol: MDG
+- name: MDI ENERGIA SA
+  symbol: MDI
+- name: MEDCAMP SA
+  symbol: MDP
+- name: MEGARON SA
+  symbol: MEG
+- name: MERIT SA
+  symbol: MEI
+- name: MERA SA
+  symbol: MER
+- name: METAVERSUM SA
+  symbol: MET
+- name: MEX POLSKA SA
+  symbol: MEX
+- name: M FOOD SA
+  symbol: MFD
+- name: MFO SA
+  symbol: MFO
+- name: MANGATA HOLDING SA
+  symbol: MGT
+- name: BANK MILLENNIUM SA
+  symbol: MIL
+- name: MIRACULUM SA
+  symbol: MIR
+- name: MAKOLAB SA
+  symbol: MLB
+- name: MLP GROUP SA
+  symbol: MLG
+- name: MLP GROUP SA - PDA
+  symbol: MLGA
+- name: MLK FOODS PUBLIC COMPANY LTD
+  symbol: MLK
+- name: MILISYSTEM SA
+  symbol: MLM
+- name: MILKPOL SA
+  symbol: MLP
+- name: ML SYSTEM SA
+  symbol: MLS
+- name: MOONLIT SA
+  symbol: MLT
+- name: MM CONFERENCES SA
+  symbol: MMC
+- name: MILESTONE MEDICAL INC
+  symbol: MMD
+- name: MADMIND STUDIO SA
+  symbol: MMS
+- name: MENNICA POLSKA SA
+  symbol: MNC
+- name: MINERAL MIDRANGE SA
+  symbol: MND
+- name: MENNICA SKARBOWA SA
+  symbol: MNS
+- name: MOLIERA2 SA
+  symbol: MO2
+- name: MOLECURE SA
+  symbol: MOC
+- name: MOJ SA
+  symbol: MOJ
+- name: "MOL MAGYAR OLAJ-\xC9S G\xC1ZIPARI R\xC9SZV\xC9NYT\xC1RSAS\xC1G"
+  symbol: MOL
+- name: MONNARI TRADE SA
+  symbol: MON
+- name: MOVIE GAMES SA
+  symbol: MOV
+- name: MEGAPIXEL STUDIO SA
+  symbol: MPS
+- name: MPAY SA
+  symbol: MPY
+- name: MIRBUD SA
+  symbol: MRB
+- name: MERCATOR MEDICAL SA
+  symbol: MRC
+- name: MEDARD SA
+  symbol: MRD
+- name: MERLIN GROUP SA
+  symbol: MRG
+- name: MR HAMBURGER SA
+  symbol: MRH
+- name: MARKA SA
+  symbol: MRK
+- name: MASSMEDICA SA
+  symbol: MSM
+- name: MOSTOSTAL PLOCK SA
+  symbol: MSP
+- name: MOSTOSTAL WARSZAWA SA
+  symbol: MSW
+- name: MOSTOSTAL ZABRZE SA
+  symbol: MSZ
+- name: MINUTOR ENERGIA SA
+  symbol: MTE
+- name: MILTON ESSEX SA
+  symbol: MTN
+- name: MOTORICUS SA
+  symbol: MTR
+- name: M-TRANS SA
+  symbol: MTS
+- name: MARVIPOL DEVELOPMENT SA
+  symbol: MVP
+- name: MOVIE GAMES VR SA
+  symbol: MVR
+- name: MW TRADE SA
+  symbol: MWT
+- name: MAXCOM SA
+  symbol: MXC
+- name: MAXIPIZZA SA
+  symbol: MXP
+- name: MUZA SA
+  symbol: MZA
+- name: NOCTILUCA SA
+  symbol: NCL
+- name: NEUCA SA
+  symbol: NEU
+- name: DIGITAL SPACE SA
+  symbol: NFP
+- name: NO GRAVITY GAMES  SA
+  symbol: NGG
+- name: NANOGROUP SA
+  symbol: NNG
+- name: NANOGROUP SA - PDA
+  symbol: NNGA
+- name: NOOBZ FROM POLAND SA
+  symbol: NOB
+- name: NOVINA SA
+  symbol: NOV
+- name: NEURONE STUDIO SA
+  symbol: NRS
+- name: NESTMEDIC SA
+  symbol: NST
+- name: NEW TECH CAPITAL SA
+  symbol: NTC
+- name: NOTORIA SERWIS SA
+  symbol: NTS
+- name: NTT SYSTEM SA
+  symbol: NTT
+- name: NOVATURAS AB
+  symbol: NTU
+- name: NEW TECH VENTURE SA
+  symbol: NTV
+- name: NETWISE SA
+  symbol: NTW
+- name: PA NOVA SA
+  symbol: NVA
+- name: NOVAVIS GROUP SA
+  symbol: NVG
+- name: NOVITA SA
+  symbol: NVT
+- name: NWAI DOM MAKLERSKI SA
+  symbol: NWA
+- name: NEWAG SA
+  symbol: NWG
+- name: NEXTBIKE POLSKA SA
+  symbol: NXB
+- name: NEXITY GLOBAL SA
+  symbol: NXG
+- name: ONE2TRIBE SA
+  symbol: O2T
+- name: "ORZE\u0141 BIA\u0141Y SA"
+  symbol: OBL
+- name: ODLEWNIE POLSKIE SA
+  symbol: ODL
+- name: OEX SA
+  symbol: OEX
+- name: OLYMP SA
+  symbol: OLY
+- name: ONE MORE LEVEL SA
+  symbol: OML
+- name: ONICO SA
+  symbol: ONC
+- name: ONDE SA
+  symbol: OND
+- name: ONE SOLUTION SA
+  symbol: ONE
+- name: ONESANO SA
+  symbol: ONO
+- name: OPEN FINANCE SA
+  symbol: OPF
+- name: CPI FIM SA
+  symbol: OPG
+- name: OPTIGIS SA
+  symbol: OPI
+- name: ORANGE POLSKA SA
+  symbol: OPL
+- name: OPTEAM SA
+  symbol: OPM
+- name: OPONEO.PL SA
+  symbol: OPN
+- name: ORGANIC FARMA ZDROWIA SA
+  symbol: ORG
+- name: "ORZE\u0141 SA"
+  symbol: ORL
+- name: "ZAK\u0141ADY PRZEMYS\u0141U CUKIERNICZEGO OTMUCH\xD3W SA"
+  symbol: OTM
+- name: OT LOGISTICS SA
+  symbol: OTS
+- name: OUTDOORZY SA
+  symbol: OUT
+- name: OVID WORKS SA
+  symbol: OVI
+- name: OVOSTAR UNION NV
+  symbol: OVO
+- name: OXYGEN SA
+  symbol: OXY
+- name: OZE CAPITAL SA
+  symbol: OZE
+- name: PRESENT24 SA
+  symbol: P24
+- name: PLANET B2B SA
+  symbol: P2B
+- name: PLAY2CHILL SA
+  symbol: P2C
+- name: PASSUS SA
+  symbol: PAS
+- name: PATENTUS SA
+  symbol: PAT
+- name: "PPB PREFABET-BIA\u0141E B\u0141OTA SA"
+  symbol: PBB
+- name: PBS FINANSE SA
+  symbol: PBF
+- name: PBG SA
+  symbol: PBG
+- name: PRIME BIT GAMES SA
+  symbol: PBT
+- name: PEKABEX SA
+  symbol: PBX
+- name: GRUPA AZOTY POLICE SA
+  symbol: PCE
+- name: PCF GROUP SA
+  symbol: PCF
+- name: PC GUARD SA
+  symbol: PCG
+- name: PEPCO GROUP NV
+  symbol: PCO
+- name: PCC ROKITA SA
+  symbol: PCR
+- name: PCC EXOL SA
+  symbol: PCX
+- name: PYRAMID GAMES SA
+  symbol: PDG
+- name: PHOTON ENERGY NV
+  symbol: PEN
+- name: BANK POLSKA KASA OPIEKI SA
+  symbol: PEO
+- name: POLENERGIA SA
+  symbol: PEP
+- name: PREFA GROUP SA
+  symbol: PFG
+- name: PERMA-FIX MEDICAL SA
+  symbol: PFM
+- name: PGE POLSKA GRUPA ENERGETYCZNA SA
+  symbol: PGE
+- name: "PROSTA GIE\u0141DA SA"
+  symbol: PGI
+- name: PMPG POLSKIE MEDIA SA
+  symbol: PGM
+- name: PGF POLSKA GRUPA FOTOWOLTAICZNA SA
+  symbol: PGV
+- name: "POLSKI HOLDING NIERUCHOMO\u015ACI SA"
+  symbol: PHN
+- name: PHARMENA SA
+  symbol: PHR
+- name: PLANET INNOVATION GROUP SA
+  symbol: PIG
+- name: POLARIS IT GROUP SA
+  symbol: PIT
+- name: PIXEL CROW GAMES SA
+  symbol: PIX
+- name: PJP MAKRUM SA
+  symbol: PJP
+- name: POLSKI KONCERN NAFTOWY ORLEN SA
+  symbol: PKN
+- name: "POWSZECHNA KASA OSZCZ\u0118DNO\u015ACI BANK POLSKI SA"
+  symbol: PKO
+- name: PKP CARGO SA
+  symbol: PKP
+- name: PROPERTY LEASE FUND SA
+  symbol: PLE
+- name: PL GROUP SA
+  symbol: PLG
+- name: PLATIGE IMAGE SA
+  symbol: PLI
+- name: POLMAN SA
+  symbol: PLM
+- name: PLAYWAY SA
+  symbol: PLW
+- name: PLAZA CENTERS NV
+  symbol: PLZ
+- name: PRIMA MODA SA
+  symbol: PMA
+- name: PAMAPOL SA
+  symbol: PMP
+- name: POINTPACK SA
+  symbol: PNT
+- name: PLANTWEAR SA
+  symbol: PNW
+- name: PUNCH PUNK SA
+  symbol: PPG
+- name: "PRZEDSI\u0118BIORSTWO PRZEMYS\u0141U SPO\u017BYWCZEGO PEPEES SA"
+  symbol: PPS
+- name: NPL NOVA SA
+  symbol: PRI
+- name: PROCHEM SA
+  symbol: PRM
+- name: "PARTNER-NIERUCHOMO\u015ACI SA"
+  symbol: PRN
+- name: A.P.N. PROMISE SA
+  symbol: PRO
+- name: PRYMUS SA
+  symbol: PRS
+- name: PROTEKTOR SA
+  symbol: PRT
+- name: POLYSLASH SA
+  symbol: PSH
+- name: PLASMA SYSTEM SA
+  symbol: PSM
+- name: PARCEL TECHNIK SA
+  symbol: PTE
+- name: POLTREG SA
+  symbol: PTG
+- name: PRIMETECH SA
+  symbol: PTH
+- name: POLTRONIC SA
+  symbol: PTN
+- name: "POLSKIE TOWARZYSTWO WSPIERANIA PRZEDSI\u0118BIORCZO\u015ACI SA"
+  symbol: PTW
+- name: ZPUE SA
+  symbol: PUE
+- name: PURE BIOLOGICS SA
+  symbol: PUR
+- name: POLWAX SA
+  symbol: PWX
+- name: POLIMEX-MOSTOSTAL SA
+  symbol: PXM
+- name: PYLON
+  symbol: PYL
+- name: "POWSZECHNY ZAK\u0141AD UBEZPIECZE\u0143 SA"
+  symbol: PZU
+- name: QUANTUM SOFTWARE SA
+  symbol: QNT
+- name: QUARTICON SA
+  symbol: QON
+- name: QUERCUS TFI SA
+  symbol: QRS
+- name: QUART DEVELOPMENT SA
+  symbol: QRT
+- name: QUBICGAMES SA
+  symbol: QUB
+- name: R22 SA
+  symbol: R22
+- name: RAEN SA
+  symbol: RAE
+- name: FABRYKA OBRABIAREK RAFAMET SA
+  symbol: RAF
+- name: ROBINSON EUROPE SA
+  symbol: RBS
+- name: RAINBOW TOURS SA
+  symbol: RBW
+- name: ROCCA SA
+  symbol: RCA
+- name: RED CARPET MEDIA GROUP SA
+  symbol: RCM
+- name: "RUCH CHORZ\xD3W SA"
+  symbol: RCW
+- name: READ-GENE SA
+  symbol: RDG
+- name: REDAN SA
+  symbol: RDN
+- name: RED DEV STUDIO SA
+  symbol: RDS
+- name: REGNON SA
+  symbol: REG
+- name: REMEDIS SA
+  symbol: REM
+- name: RESBUD SE
+  symbol: RES
+- name: RAFAKO SA
+  symbol: RFK
+- name: ROBS GROUP LOGISTIC SA
+  symbol: RGL
+- name: REINHOLD EUROPE AB
+  symbol: RHD
+- name: RELPOL SA
+  symbol: RLP
+- name: "REMAK-ENERGOMONTA\u017B SA"
+  symbol: RMK
+- name: REINO CAPITAL SA
+  symbol: RNC
+- name: RENDER CUBE SA
+  symbol: RND
+- name: RANK PROGRESS SA
+  symbol: RNK
+- name: ROVITA SA
+  symbol: ROV
+- name: "ZAK\u0141ADY MAGNEZYTOWE ROPCZYCE SA"
+  symbol: RPC
+- name: ROOF RENOVATION SA
+  symbol: RRH
+- name: REMOR SOLAR POLSKA SA
+  symbol: RSP
+- name: ROAD STUDIO SA
+  symbol: RST
+- name: RYVU THERAPEUTICS SA
+  symbol: RVU
+- name: RAWLPLUG SA
+  symbol: RWL
+- name: S4E SA
+  symbol: S4E
+- name: GRUPO SANTANDER
+  symbol: SAN
+- name: SOFTBLUE SA
+  symbol: SBE
+- name: SCOPE FLUIDICS SA
+  symbol: SCP
+- name: STEM CELLS SPIN SA
+  symbol: SCS
+- name: SUNDRAGON  SA
+  symbol: SDG
+- name: SDS OPTIC SA
+  symbol: SDS
+- name: SEDIVIO SA
+  symbol: SED
+- name: SEKO SA
+  symbol: SEK
+- name: SELENA FM SA
+  symbol: SEL
+- name: SERINUS ENERGY PLC
+  symbol: SEN
+- name: SESCOM SA
+  symbol: SES
+- name: SEVENET SA
+  symbol: SEV
+- name: SFD SA
+  symbol: SFD
+- name: SILVANO FASHION GROUP AS
+  symbol: SFG
+- name: SKOCZOWSKA FABRYKA KAPELUSZY POLKAP SA
+  symbol: SFK
+- name: SFERANET SA
+  symbol: SFN
+- name: SFINKS POLSKA SA
+  symbol: SFS
+- name: SYGNITY SA
+  symbol: SGN
+- name: SADOVAYA GROUP SA
+  symbol: SGR
+- name: SOHO DEVELOPMENT SA
+  symbol: SHD
+- name: STARHEDGE SA
+  symbol: SHG
+- name: SHOPER SA
+  symbol: SHO
+- name: SHEEPYARD SA
+  symbol: SHY
+- name: SIE
+  symbol: SIE
+- name: SIMFABRIC SA
+  symbol: SIM
+- name: SOLAR INNOVATION SA
+  symbol: SIN
+- name: "FABRYKA FARB I LAKIER\xD3W \u015ANIE\u017BKA SA"
+  symbol: SKA
+- name: SKARBIEC HOLDING SA
+  symbol: SKH
+- name: SKYLINE INVESTMENT SA
+  symbol: SKL
+- name: SAKANA SA
+  symbol: SKN
+- name: SAULE TECHNOLOGIES SA
+  symbol: SLT
+- name: SELVITA SA
+  symbol: SLV
+- name: SLEEPZ AG
+  symbol: SLZ
+- name: SIMTERACT SA
+  symbol: SMT
+- name: SYNERGA.FUND SA
+  symbol: SNG
+- name: SANOK RUBBER COMPANY SA
+  symbol: SNK
+- name: SYNEKTIK SA
+  symbol: SNT
+- name: SANWIL HOLDING SA
+  symbol: SNW
+- name: SUNEX SA
+  symbol: SNX
+- name: SONKA SA
+  symbol: SOK
+- name: SOLAR COMPANY SA
+  symbol: SOL
+- name: SONEL SA
+  symbol: SON
+- name: SOPHARMA AD
+  symbol: SPH
+- name: SPARK VC SA
+  symbol: SPK
+- name: SANTANDER BANK POLSKA SA
+  symbol: SPL
+- name: SPYROSOFT SA
+  symbol: SPR
+- name: STARWARD INDUSTRIES SA
+  symbol: STA
+- name: STANDREW SA
+  symbol: STD
+- name: STALPROFIL SA
+  symbol: STF
+- name: STS HOLDING SA
+  symbol: STH
+- name: STILO ENERGY SA
+  symbol: STI
+- name: STALPRODUKT SA
+  symbol: STP
+- name: SATIS GROUP SA
+  symbol: STS
+- name: STALEXPORT AUTOSTRADY SA
+  symbol: STX
+- name: SUMMA LINGUAE SA
+  symbol: SUL
+- name: SUNTECH SA
+  symbol: SUN
+- name: SUWARY SA
+  symbol: SUW
+- name: SILVAIR INC
+  symbol: SVRS
+- name: SECO/WARWICK SA
+  symbol: SWG
+- name: SKINWALLET SA
+  symbol: SWT
+- name: SYGNIS SA
+  symbol: SYG
+- name: SYMBIO POLSKA SA
+  symbol: SYM
+- name: SZAR SA
+  symbol: SZR
+- name: TERMO2POWER SA
+  symbol: T2P
+- name: "TARCZY\u0143SKI SA"
+  symbol: TAR
+- name: T-BULL SA
+  symbol: TBL
+- name: TEN SQUARE GAMES SA
+  symbol: TEN
+- name: TRIGGO SA
+  symbol: TGG
+- name: TRUE GAMES SYNDICATE SA
+  symbol: TGS
+- name: THE DUST SA
+  symbol: THD
+- name: TENDERHUT SA
+  symbol: THG
+- name: TIM SA
+  symbol: TIM
+- name: TELGAM SA
+  symbol: TLG
+- name: TELESTO SA
+  symbol: TLO
+- name: TELESTRADA SA
+  symbol: TLS
+- name: TALEX SA
+  symbol: TLX
+- name: TERMOEXPERT SA
+  symbol: TME
+- name: TELEMEDYCYNA SA
+  symbol: TMP
+- name: TATRY MOUNTAIN RESORTS AS
+  symbol: TMR
+- name: TOYA SA
+  symbol: TOA
+- name: TORPOL SA
+  symbol: TOR
+- name: TAMEX OBIEKTY SPORTOWE SA
+  symbol: TOS
+- name: TOWER INVESTMENTS SA
+  symbol: TOW
+- name: TAURON POLSKA ENERGIA SA
+  symbol: TPE
+- name: TRITON DEVELOPMENT SA
+  symbol: TRI
+- name: TRAKCJA PRKII SA
+  symbol: TRK
+- name: TRANS POLONIA SA
+  symbol: TRN
+- name: TERMO-REX SA
+  symbol: TRR
+- name: TESGAS SA
+  symbol: TSG
+- name: TAXUS FUND SA
+  symbol: TXF
+- name: TXM SA
+  symbol: TXM
+- name: TAX-NET SA
+  symbol: TXN
+- name: UNIMA 2000 SYSTEMY TELEINFORMATYCZNE SA
+  symbol: U2K
+- name: UNICREDIT S.P.A
+  symbol: UCG
+- name: UNIFIED FACTORY SA
+  symbol: UFC
+- name: UF GAMES SA
+  symbol: UFG
+- name: ULTIMATE GAMES SA
+  symbol: ULG
+- name: ULMA CONSTRUCCION POLSKA SA
+  symbol: ULM
+- name: UNFOLD.VC ASI SA
+  symbol: UNF
+- name: UNIBEP SA
+  symbol: UNI
+- name: UNITED LABEL SA
+  symbol: UNL
+- name: UNIMOT SA
+  symbol: UNT
+- name: UNIVERSE SA
+  symbol: UNV
+- name: URTESTE SA
+  symbol: URT
+- name: VARSAV GAME STUDIOS SA
+  symbol: VAR
+- name: VIDIS SA
+  symbol: VDS
+- name: VEE SA
+  symbol: VEE
+- name: MPL VERBUM SA
+  symbol: VER
+- name: VIGO PHOTONICS SA
+  symbol: VGO
+- name: VIATRON SA
+  symbol: VIA
+- name: "GIE\u0141DA PRAW MAJ\u0104TKOWYCH VINDEXUS SA"
+  symbol: VIN
+- name: EUROINVESTMENT SA
+  symbol: VIV
+- name: VAKOMTEK SA
+  symbol: VKT
+- name: VOOLT SA
+  symbol: VLT
+- name: VOTUM SA
+  symbol: VOT
+- name: VOW
+  symbol: VOW
+- name: VOXEL SA
+  symbol: VOX
+- name: VERBICOM SA
+  symbol: VRB
+- name: VERCOM SA
+  symbol: VRC
+- name: VR FACTORY GAMES SA
+  symbol: VRF
+- name: VRG SA
+  symbol: VRG
+- name: VISTAL GDYNIA SA
+  symbol: VTL
+- name: VIVID GAMES SA
+  symbol: VVD
+- name: WASKO SA
+  symbol: WAS
+- name: WAT SA
+  symbol: WAT
+- name: WERTH-HOLZ SA
+  symbol: WHH
+- name: WIKANA SA
+  symbol: WIK
+- name: BALTIC BRIDGE SA
+  symbol: WIS
+- name: WIELTON SA
+  symbol: WLT
+- name: "WODKAN PRZEDSI\u0118BIORSTWO WODOCI\u0104G\xD3W I KANALIZACJI SA"
+  symbol: WOD
+- name: WOJAS SA
+  symbol: WOJ
+- name: WIRTUALNA POLSKA HOLDING SA
+  symbol: WPL
+- name: WOODPECKER.CO SA
+  symbol: WPR
+- name: WEST REAL ESTATE SA
+  symbol: WRE
+- name: WIERZYCIEL SA
+  symbol: WRL
+- name: WITTCHEN SA
+  symbol: WTN
+- name: WAWEL SA
+  symbol: WWL
+- name: WARIMPEX FINANZ & UND BETEILIGUNGS AG
+  symbol: WXF
+- name: XBS PRO-LOG SA
+  symbol: XBS
+- name: XPLUS SA
+  symbol: XPL
+- name: X-TRADE BROKERS SA
+  symbol: XTB
+- name: XTPL SA
+  symbol: XTP
+- name: NEPTIS SA
+  symbol: YAN
+- name: YELLOW BOSON SA
+  symbol: YBS
+- name: BLUGO SA
+  symbol: YOL
+- name: YOSHI INNOVATION SA
+  symbol: YOS
+- name: YETIFORCE SA
+  symbol: YTF
+- name: "GRUPA AZOTY ZAK\u0141ADY AZOTOWE PU\u0141AWY SA"
+  symbol: ZAP
+- name: ZENERIS PROJEKTY SA
+  symbol: ZEN
+- name: "ZESP\xD3\u0141 ELEKTROWNI P\u0104TN\xD3W-ADAM\xD3W-KONIN SA"
+  symbol: ZEP
+- name: ZAMET INDUSTRY SA
+  symbol: ZMT
+- name: "ZAK\u0141AD BUDOWY MASZYN ZREMB-CHOJNICE SA"
+  symbol: ZRE
+- name: ZORTRAX SA
+  symbol: ZRX
+- name: ZUE SA
+  symbol: ZUE
+- name: "ZAK\u0141ADY URZ\u0104DZE\u0143 KOT\u0141OWYCH ST\u0104PORK\xD3W SA"
+  symbol: ZUK
+- name: "GRUPA \u017BYWIEC SA"
+  symbol: ZWC

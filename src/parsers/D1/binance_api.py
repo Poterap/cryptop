@@ -2,8 +2,15 @@ import os
 import requests
 import pandas as pd
 
+from log.logger import My_logger
+from config.config_reader import read_config
 
-def download_binance_data(crypto: str, limit: int = 1000, interval: str = '1m'):
+
+config = read_config()
+
+logger = My_logger(name=config['binance_api']['logger_name'], filename=config['binance_api']['logger_path'])
+
+def download_binance_data(crypto: str, limit: int = config['binance_api']['default_limit'], interval: str = config['binance_api']['default_interval']):
     # Construct the file path for the CSV file to save data to
     symbol = f'{crypto.upper()}USDT'
     
@@ -27,12 +34,18 @@ def download_binance_data(crypto: str, limit: int = 1000, interval: str = '1m'):
         start_time = int(start_date.timestamp() * 1000)
         end_time = int(end_date.timestamp() * 1000)
 
-        # Construct the API URL to retrieve data from Binance
-        url = f'https://api.binance.com/api/v3/klines?symbol={symbol}&interval={interval}&startTime={start_time}&endTime={end_time}&limit={limit}'
-
+        #setings params for url
+        params = {
+            'symbol': symbol,
+            'interval': interval,
+            'startTime': start_time,
+            'endTime': end_time,
+            'limit': limit
+        }
+        
         # Retrieve data from Binance's API
         try:
-            response = requests.get(url)
+            response = requests.get('https://api.binance.com/api/v3/klines', params=params)
             response.raise_for_status() # raise an error for non-200 status codes
         except requests.exceptions.RequestException as e:
             # handle connection errors
@@ -50,12 +63,13 @@ def download_binance_data(crypto: str, limit: int = 1000, interval: str = '1m'):
             temp_df = pd.DataFrame(data, columns=columns)
             temp_df['open_time'] = pd.to_datetime(temp_df['open_time'], unit='ms')
             temp_df['close_time'] = pd.to_datetime(temp_df['close_time'], unit='ms')
+            temp_df.drop('ignored', axis=1, inplace=True)
 
             if not temp_df.empty:
                 # Update the start_date to continue from the next minute
                 start_date = temp_df['open_time'].iloc[-1] + pd.Timedelta(minutes=1)
                 if info_start_date is None:
-                    info_start_date = str(temp_df.iloc[0]['close_time'])
+                    info_start_date = str(temp_df.iloc[0]['open_time'])
                 if os.path.exists(csv_file_path):
                     # Append data to an existing CSV file
                     temp_df.to_csv(csv_file_path, mode='a', index=False, header=False)
@@ -76,5 +90,6 @@ def download_binance_data(crypto: str, limit: int = 1000, interval: str = '1m'):
 
     last_date = str(temp_df.iloc[-1]['close_time'])
     info = f"Updated data for {crypto} with {interval} interval from {info_start_date} to {last_date}"
+    logger.info(info)
     print(info)
     return info

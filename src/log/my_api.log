@@ -1,0 +1,13 @@
+2023-04-26 10:44:47,177 - api_logger - INFO - Data for BTC updated successfully
+2023-04-26 10:45:01,386 - api_logger - INFO - Data for BTC updated successfully
+2023-04-26 13:10:52,305 - api_logger - INFO - Data for BTC updated successfully
+2023-04-26 13:10:56,680 - api_logger - INFO - Received GET request for /status
+2023-04-28 22:55:56,256 - api_logger - INFO - Received GET request for /status
+2023-04-28 22:55:57,900 - api_logger - INFO - Received GET request for /status
+2023-04-28 23:19:20,690 - api_logger - INFO - Data for ETH updated successfully
+2023-04-28 23:19:29,081 - api_logger - INFO - Data for ETH updated successfully
+2023-05-04 21:17:20,391 - api_logger - INFO - Data for allc updated successfully
+2023-05-04 21:18:07,240 - api_logger - INFO - Data for allc updated successfully
+2023-05-04 21:18:50,104 - api_logger - INFO - Data updated successfully for all cryptocurrencies
+2023-05-04 21:19:28,049 - api_logger - INFO - Data updated successfully for all cryptocurrencies
+2023-05-04 21:28:35,232 - api_logger - INFO - Data updated successfully for all cryptocurrencies
