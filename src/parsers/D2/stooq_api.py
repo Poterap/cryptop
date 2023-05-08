@@ -38,4 +38,3 @@ def download_stooq_data(symbol: str):
     except Exception as e:
         logger.error(f"Error occurred while downloading file for {symbol}: {e}")
         return f"Failed to download file for {symbol}. Error: {e}"
-

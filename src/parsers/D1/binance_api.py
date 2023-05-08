@@ -45,7 +45,7 @@ def download_binance_data(crypto: str, limit: int = config['binance_api']['defau
         
         # Retrieve data from Binance's API
         try:
-            response = requests.get('https://api.binance.com/api/v3/klines', params=params)
+            response = requests.get(config['binance_api']['binance_api_url'], params=params)
             response.raise_for_status() # raise an error for non-200 status codes
         except requests.exceptions.RequestException as e:
             # handle connection errors

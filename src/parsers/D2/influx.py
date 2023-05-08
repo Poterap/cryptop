@@ -31,14 +31,16 @@ for file_name in os.listdir(folder_path):
     with open(file_path) as csvfile:
         reader = csv.DictReader(csvfile)
 
-        count = 0
-        rcount = 0
+        points = []
+
+        rows_processed = 0
+        rows_with_data = 0
 
         for row in reader:
-            count += 1
+            rows_processed += 1
             try:
                 if row['Otwarcie'] and row['Najwyzszy'] and row['Najnizszy'] and row['Zamkniecie']:
-                    rcount += 1
+                    rows_with_data += 1
                     point = (
                         Point(date)
                         .tag("symbol", symbol)
@@ -49,9 +51,14 @@ for file_name in os.listdir(folder_path):
                         .field("close", float(row['Zamkniecie']))
                         .field("volume", float(row['Wolumen']) if row['Wolumen'] else 0.0)
                     )
-
-                write_api.write(bucket=bucket, org=org, record=point)
+                    points.append(point)
             except Exception as e:
-                print(f"Błąd dla wiersza {count} {symbol} {row['Data']}: {e}")
+                print(f"Błąd dla wiersza {rows_processed} {symbol} {row['Data']}: {e}")
 
-        print(f'{count} of {rcount} rows processed for {symbol}')
+        # Zapis wszystkich punktów do bazy danych
+        try:
+            write_api.write(bucket=bucket, org=org, record=points)
+        except Exception as e:
+            print(f"Błąd podczas zapisu punktów do bazy danych: {e}")
+
+        print(f'{rows_with_data} of {rows_processed} rows have data for {symbol}')
