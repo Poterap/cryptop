@@ -6,7 +6,7 @@ from config.config_reader import read_config
 import csv
 from influxdb_client import InfluxDBClient, Point, WritePrecision
 from influxdb_client.client.write_api import SYNCHRONOUS
-from utils import create_folder_in_directory
+from utils.file_functions import create_folder_in_directory
 
 
 config = read_config()
@@ -33,7 +33,7 @@ def download_stooq_data(symbol: str):
         urllib.request.urlretrieve(url, filepath)
 
         # Read the first line of the file
-        with open(filename) as f:
+        with open(filepath) as f:
             first_line = f.readline().strip()
 
         # Check if the first line indicates daily limit exceeded

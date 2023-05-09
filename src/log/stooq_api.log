@@ -3262,3 +3262,8 @@
 2023-05-08 23:47:00,869 - stooq_logger - INFO - File downloaded successfully for 01c and saved in /parsers/D2/stooq_data_2023-05-08/01c_2023-05-08.csv
 2023-05-08 23:52:20,910 - stooq_logger - INFO - File downloaded successfully for 1at and saved in /parsers/D2/stooq_data_2023-05-08/1at_2023-05-08.csv
 2023-05-08 23:55:20,437 - stooq_logger - INFO - File downloaded successfully for 1at and saved in /parsers/D2/stooq_data_2023-05-08/1at_2023-05-08.csv
+2023-05-09 18:22:49,043 - stooq_logger - ERROR - Error occurred while downloading file for 01c: [Errno 2] No such file or directory: '01c_2023-05-09.csv'
+2023-05-09 18:24:30,603 - stooq_logger - ERROR - Error occurred while downloading file for 01c: [Errno 2] No such file or directory: '01c_2023-05-09.csv'
+2023-05-09 18:24:57,839 - stooq_logger - ERROR - Error occurred while downloading file for 01c: [Errno 2] No such file or directory: '01c_2023-05-09.csv'
+2023-05-09 18:25:46,145 - stooq_logger - ERROR - Error occurred while downloading file for 06n: [Errno 2] No such file or directory: '06n_2023-05-09.csv'
+2023-05-09 18:25:59,438 - stooq_logger - ERROR - Error occurred while downloading file for 06n: [Errno 2] No such file or directory: '06n_2023-05-09.csv'

@@ -6,7 +6,7 @@ import ydata_profiling as pp
 
 sys.path.append("..")
 
-from utils import create_folder_in_directory
+from utils.file_functions import create_folder_in_directory
 
 
 # Path to the folder with CSV files
