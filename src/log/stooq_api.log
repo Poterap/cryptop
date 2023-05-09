@@ -3257,3 +3257,8 @@
 2023-05-04 21:28:35,011 - stooq_logger - INFO - File downloaded successfully for ZUK.
 2023-05-04 21:28:35,232 - stooq_logger - INFO - File downloaded successfully for ZWC.
 2023-05-05 16:08:23,594 - stooq_logger - INFO - File downloaded successfully for 01c.
+2023-05-08 23:24:39,108 - stooq_logger - INFO - File downloaded successfully for 01c and saved in /parsers/D2/stooq_data_2023-05-08/01c_2023-05-08.csv
+2023-05-08 23:46:17,781 - stooq_logger - INFO - File downloaded successfully for 01c and saved in /parsers/D2/stooq_data_2023-05-08/01c_2023-05-08.csv
+2023-05-08 23:47:00,869 - stooq_logger - INFO - File downloaded successfully for 01c and saved in /parsers/D2/stooq_data_2023-05-08/01c_2023-05-08.csv
+2023-05-08 23:52:20,910 - stooq_logger - INFO - File downloaded successfully for 1at and saved in /parsers/D2/stooq_data_2023-05-08/1at_2023-05-08.csv
+2023-05-08 23:55:20,437 - stooq_logger - INFO - File downloaded successfully for 1at and saved in /parsers/D2/stooq_data_2023-05-08/1at_2023-05-08.csv

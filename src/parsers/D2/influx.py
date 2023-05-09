@@ -1,7 +1,8 @@
-import os
+import glob
 import csv
 import datetime
 import sys
+import os
 from influxdb_client import InfluxDBClient, Point, WritePrecision
 from influxdb_client.client.write_api import SYNCHRONOUS
 
@@ -19,16 +20,27 @@ folder_path = './data/stooq_data_2023-05-04'
 
 write_api = client.write_api(write_options=SYNCHRONOUS)
 
-# Get the list of files in the folder
-for file_name in os.listdir(folder_path):
-    # Get the symbol and date from the file name
-    symbol, date_str = os.path.splitext(file_name)[0].split('_')
-    date = datetime.datetime.strptime(date_str, '%Y-%m-%d').date()
+# Get the list of CSV files in the folder
+try:
+    files = glob.glob(f"{folder_path}/*.csv")
+except Exception as e:
+    print(f"Error getting list of CSV files: {e}")
+    sys.exit()
 
-    file_path = os.path.join(folder_path, file_name)
+for file_path in files:
+    # Get the symbol and date from the file name
+    try:
+        file_name = os.path.basename(file_path)
+        symbol, date_str = os.path.splitext(file_name)[0].split('_')
+        date = datetime.datetime.strptime(date_str, '%Y-%m-%d').date()
+    except Exception as e:
+        print(f"Error getting symbol and date from file name {file_name}: {e}")
+        continue
 
     # Open the CSV file for the given stock
+
     with open(file_path) as csvfile:
+        
         reader = csv.DictReader(csvfile)
 
         points = []
@@ -65,12 +77,14 @@ for file_name in os.listdir(folder_path):
                     points.append(point)
             except Exception as e:
                 print(f"Error processing row {rows_processed} for {symbol} {row['Data']}: {e}")
-                break
+                continue
 
-        # Write all the points to the database
-        try:
-            write_api.write(bucket=bucket, org=org, record=points)
-        except Exception as e:
-            print(f"Error writing points to the database: {e}")
+    # Write all the points to the database
+    try:
+        write_api.write(bucket=bucket, org=org, record=points)
+    except Exception as e:
+        print(f"Error writing points to the database: {e}")
+        continue
 
-        print(f'{rows_processed} of {rows_with_data} rows processed for {symbol}')
+    print(f'{rows_processed} of {rows_with_data} rows processed for {symbol}')
+

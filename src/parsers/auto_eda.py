@@ -1,21 +1,18 @@
 import os
 import glob
+import sys
 import pandas as pd
 import ydata_profiling as pp
+
+sys.path.append("..")
+
+from utils import create_folder_in_directory
+
 
 # Path to the folder with CSV files
 folder_path = './D2/data/stooq_data_2023-05-05'
 
-# Path to the folder for EDA reports
-output_folder_path = './D2/data/stooq_data_2023-05-05/automatic_eda'
-
-# Create the output folder if it doesn't exist
-try:
-    if not os.path.exists(output_folder_path):
-        os.makedirs(output_folder_path)
-except OSError as error:
-    print(f"Error creating output folder: {error}")
-    exit(1)
+output_folder_path = create_folder_in_directory(name='automatic_eda', path='./D2/data/stooq_data_2023-05-05', add_date=False)
 
 # Get a list of CSV files in the folder
 try:
