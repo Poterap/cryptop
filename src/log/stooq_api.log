@@ -3267,3 +3267,4 @@
 2023-05-09 18:24:57,839 - stooq_logger - ERROR - Error occurred while downloading file for 01c: [Errno 2] No such file or directory: '01c_2023-05-09.csv'
 2023-05-09 18:25:46,145 - stooq_logger - ERROR - Error occurred while downloading file for 06n: [Errno 2] No such file or directory: '06n_2023-05-09.csv'
 2023-05-09 18:25:59,438 - stooq_logger - ERROR - Error occurred while downloading file for 06n: [Errno 2] No such file or directory: '06n_2023-05-09.csv'
+2023-05-09 18:34:18,450 - stooq_logger - WARNING - File not found for 06n.

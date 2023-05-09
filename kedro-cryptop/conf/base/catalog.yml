@@ -1,0 +1,7 @@
+tickers:
+  type: pandas.CSVDataSet
+  filepath: data/01_raw/ticker.csv
+
+preprocessed_tickers :
+  type: pandas.CSVDataSet
+  filepath: data/02_intermediate/preprocessed_tickers.csv

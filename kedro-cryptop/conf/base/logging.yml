@@ -30,7 +30,7 @@ loggers:
   kedro:
     level: INFO
 
-  adork_kedro:
+  kedro_cryptop:
     level: INFO
 
 root:

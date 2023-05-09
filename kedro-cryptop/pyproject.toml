@@ -1,6 +1,6 @@
 [tool.kedro]
-package_name = "adork_kedro"
-project_name = "adork-kedro"
+package_name = "kedro_cryptop"
+project_name = "kedro-cryptop"
 kedro_init_version = "0.18.8"
 
 [tool.isort]
@@ -9,7 +9,7 @@ profile = "black"
 [tool.pytest.ini_options]
 addopts = """
 --cov-report term-missing \
---cov src/adork_kedro -ra"""
+--cov src/kedro_cryptop -ra"""
 
 [tool.coverage.report]
 fail_under = 0

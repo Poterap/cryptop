@@ -1,8 +1,8 @@
-.. adork_kedro documentation master file, created by sphinx-quickstart.
+.. kedro_cryptop documentation master file, created by sphinx-quickstart.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to project adork_kedro's API docs!
+Welcome to project kedro_cryptop's API docs!
 =============================================
 
 .. toctree::

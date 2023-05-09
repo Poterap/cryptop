@@ -1,5 +1,5 @@
-"""adork-kedro file for ensuring the package is executable
-as `adork-kedro` and `python -m adork_kedro`
+"""kedro-cryptop file for ensuring the package is executable
+as `kedro-cryptop` and `python -m kedro_cryptop`
 """
 import importlib
 from pathlib import Path
@@ -20,7 +20,7 @@ def _find_run_command(package_name):
         if run:
             # use run command from installed plugin if it exists
             return run
-        # use run command from `kedro.framework.cli.project`
+        # use run command from the framework project
         from kedro.framework.cli.project import run
 
         return run

@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 
 
-# adork_kedro documentation build
+# kedro_cryptop documentation build
 # configuration file, created by sphinx-quickstart.
 #
 # This file is execfile()d with the current directory set to its
@@ -20,12 +21,11 @@
 import re
 
 from kedro.framework.cli.utils import find_stylesheets
-
-from adork_kedro import __version__ as release
+from kedro_cryptop import __version__ as release
 
 # -- Project information -----------------------------------------------------
 
-project = "adork_kedro"
+project = "kedro_cryptop"
 author = "Kedro"
 
 # The short X.Y version.
@@ -47,13 +47,12 @@ extensions = [
     "sphinx.ext.doctest",
     "sphinx.ext.todo",
     "sphinx.ext.coverage",
-    "sphinx.ext.mathjax",
     "sphinx.ext.ifconfig",
     "sphinx.ext.viewcode",
     "sphinx.ext.mathjax",
     "nbsphinx",
-    "myst_parser",
     "sphinx_copybutton",
+    "myst_parser",
 ]
 
 # enable autosummary plugin (table of contents for modules/classes/class
@@ -116,10 +115,13 @@ html_static_path = ["_static"]
 
 html_show_sourcelink = False
 
+# Removes, from all docs, the copyright footer.
+html_show_copyright = False
+
 # -- Options for HTMLHelp output ---------------------------------------------
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = "adork_kedrodoc"
+htmlhelp_basename = "kedro_cryptopdoc"
 
 # -- Options for LaTeX output ------------------------------------------------
 
@@ -147,8 +149,8 @@ latex_elements = {
 latex_documents = [
     (
         master_doc,
-        "adork_kedro.tex",
-        "adork_kedro Documentation",
+        "kedro_cryptop.tex",
+        "kedro_cryptop Documentation",
         "Kedro",
         "manual",
     )
@@ -161,8 +163,8 @@ latex_documents = [
 man_pages = [
     (
         master_doc,
-        "adork_kedro",
-        "adork_kedro Documentation",
+        "kedro_cryptop",
+        "kedro_cryptop Documentation",
         [author],
         1,
     )
@@ -176,11 +178,11 @@ man_pages = [
 texinfo_documents = [
     (
         master_doc,
-        "adork_kedro",
-        "adork_kedro Documentation",
+        "kedro_cryptop",
+        "kedro_cryptop Documentation",
         author,
-        "adork_kedro",
-        "Project adork_kedro codebase.",
+        "kedro_cryptop",
+        "Project kedro_cryptop codebase.",
         "Data-Science",
     )
 ]
@@ -222,3 +224,4 @@ def setup(app):
     # add Kedro stylesheets
     for stylesheet in find_stylesheets():
         app.add_css_file(stylesheet)
+    # enable rendering RST tables in Markdown
