@@ -1,12 +1,7 @@
 import datetime
-import logging
-import sys
-
-import pytest
-from fastapi import HTTPException
 from fastapi.testclient import TestClient
 
-from ..src.REST.main import app
+from src.app.main import app
 
 client = TestClient(app)
 

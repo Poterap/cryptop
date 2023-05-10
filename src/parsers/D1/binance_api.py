@@ -2,8 +2,8 @@ import os
 import requests
 import pandas as pd
 
-from log.logger import My_logger
-from config.config_reader import read_config
+from src.log.logger import My_logger
+from src.config.config_reader import read_config
 
 
 config = read_config()

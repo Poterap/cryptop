@@ -1,12 +1,12 @@
 import datetime
 import os
 import urllib
-from log.logger import My_logger
-from config.config_reader import read_config
+from src.log.logger import My_logger
+from src.config.config_reader import read_config
 import csv
 from influxdb_client import InfluxDBClient, Point, WritePrecision
 from influxdb_client.client.write_api import SYNCHRONOUS
-from utils.file_functions import create_folder_in_directory
+from src.utils.file_functions import create_folder_in_directory
 
 
 config = read_config()

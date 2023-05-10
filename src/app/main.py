@@ -1,18 +1,15 @@
-import argparse
 import datetime
-import logging
 import sys
-import uvicorn
 
 from fastapi import FastAPI, HTTPException, Path
 import requests
 
 sys.path.append("..")
 
-from log.logger import My_logger
-from parsers.D2.stooq_api import get_symbols, download_stooq_data
-from parsers.D1.binance_api import download_binance_data
-from config.config_reader import read_config
+from src.log.logger import My_logger
+from src.parsers.D2.stooq_api import get_symbols, download_stooq_data
+from src.parsers.D1.binance_api import download_binance_data
+from src.config.config_reader import read_config
 
 
 config = read_config()

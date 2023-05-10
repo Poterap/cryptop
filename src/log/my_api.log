@@ -23,3 +23,4 @@
 2023-05-09 18:25:46,146 - api_logger - INFO - Data for 06n updated successfully
 2023-05-09 18:25:59,438 - api_logger - INFO - Data for 06n updated successfully
 2023-05-09 18:34:18,450 - api_logger - INFO - Data for 06n updated successfully
+2023-05-10 17:01:06,663 - api_logger - INFO - Received GET request for /status
