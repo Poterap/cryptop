@@ -1,6 +1,6 @@
 my_api:
   logger_name: api_logger
-  logger_path: ./src/log/my_api.log
+  logger_path: ./src/log/logs/my_api.log
   status_message: okey
 
 binance_api:
