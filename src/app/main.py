@@ -4,8 +4,6 @@ import sys
 from fastapi import FastAPI, HTTPException, Path
 import requests
 
-sys.path.append("..")
-
 from src.log.logger import My_logger
 from src.parsers.D2.stooq_api import get_symbols, download_stooq_data
 from src.parsers.D1.binance_api import download_binance_data

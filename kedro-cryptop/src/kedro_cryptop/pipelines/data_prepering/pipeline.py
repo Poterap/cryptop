@@ -12,7 +12,6 @@ def create_pipeline(**kwargs):
                 outputs="preprocessed_tickers",
                 name="fill_ticker_nans"
             ),
-            # kolejne kroki potoku
         ]
     )
 
