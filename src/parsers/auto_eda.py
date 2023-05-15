@@ -4,10 +4,7 @@ import sys
 import pandas as pd
 import ydata_profiling as pp
 
-sys.path.append("..")
-
-from utils.file_functions import create_folder_in_directory
-
+from src.utils.file_functions import create_folder_in_directory
 
 # Path to the folder with CSV files
 folder_path = './D2/data/stooq_data_2023-05-05'

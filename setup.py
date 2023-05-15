@@ -11,5 +11,6 @@ setup(
         'pandas',
         'fastapi',
         'influxdb_client'
+        'ydata_profiling'
     ]
 )

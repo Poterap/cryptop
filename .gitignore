@@ -1,15 +1,12 @@
 #Pliki z datą
 **/data/*
 
-# Pliki generowane automatycznie
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-
-# Pliki środowiska IDE
-.idea/
-.vscode/
+#foldery generowane autoamtycznie
+**/.pytest_cache/
+**/__pycache__/
+**/.vscode/
+**/.idea/
+**/logs/
 
 # Pliki logów
 *.log

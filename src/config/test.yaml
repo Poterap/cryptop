@@ -5,7 +5,7 @@ my_api:
 
 binance_api:
   logger_name: binance_logger
-  logger_path: ./src/log/binance_api.log
+  logger_path: ./src/log/logs/binance_api.log
   default_limit: 1000
   default_interval: 1m
   binance_api_url: https://api.binance.com/api/v3/klines
@@ -36,7 +36,7 @@ binance_api:
 
 stooq_api:
   logger_name: stooq_logger
-  logger_path: ./src/log/stooq_api.log
+  logger_path: ./src/log/logs/stooq_api.log
   stooq_api_url: https://stooq.pl/q/d/l/?s={}&i=d
   symbols:
     - 01C: 01CYBERATON SA
