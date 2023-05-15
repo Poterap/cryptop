@@ -14,5 +14,27 @@ services:
       - DOCKER_INFLUXDB_INIT_ORG=my-org 
       - DOCKER_INFLUXDB_INIT_BUCKET=my-bucket
 
+  fastapi:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: fastapi
+    ports:
+      - 80:80
+    volumes:
+      - ./src/log/logs:/crypto/src/log/logs
+    environment:
+      - TZ=Europe/Warsaw
+
+  scheduler:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: scheduler
+    volumes:
+      - ./src/log/logs:/crypto/src/log/logs
+    environment:
+      - TZ=Europe/Warsaw
+
 volumes:
   influxdb-storage:

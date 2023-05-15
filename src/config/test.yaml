@@ -3,6 +3,11 @@ my_api:
   logger_path: ./src/log/logs/my_api.log
   status_message: okey
 
+scheduler:
+  logger_name: api_logger
+  logger_path: ./src/log/logs/my_api.log
+  every_minutes: 1
+
 binance_api:
   logger_name: binance_logger
   logger_path: ./src/log/logs/binance_api.log
