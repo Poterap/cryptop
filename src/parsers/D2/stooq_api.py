@@ -6,7 +6,7 @@ from src.config.config_reader import read_config
 import csv
 from influxdb_client import InfluxDBClient, Point, WritePrecision
 from influxdb_client.client.write_api import SYNCHRONOUS
-from src.utils.file_functions import create_folder_in_directory
+from src.utils.file_functions import create_folder_in_directory, create_full_file_path
 
 
 config = read_config()
@@ -18,15 +18,14 @@ def get_symbols():
 
 def download_stooq_data(symbol: str):
     # Create a folder for the data
-    dir_path = create_folder_in_directory(name='stooq_data', path='../parsers/D2/data', add_date=True)
+    dir_path = create_folder_in_directory(name=config['stooq_api']['creating_folder']['folder_for_saving_data_name'], path_directory=config['stooq_api']['creating_folder']['folder_for_saving_data'], add_date=config['stooq_api']['creating_folder']['folder_for_saving_data_is_wuth_dat'])
 
     # Generate a filename with the symbol and the current date
-    date_string = datetime.datetime.now().strftime("%Y-%m-%d")
-    filename = f"{symbol}_{date_string}.csv"
-    filepath = os.path.join(dir_path, filename)
+    filepath = create_full_file_path(symbol, dir_path, True, ".csv")
 
     # Generate a URL for the data
-    url = f"https://stooq.pl/q/d/l/?s={symbol}&i=d"
+    url_template = config['stooq_api']['stooq_api_url']
+    url = url_template.format(symbol)
 
     try:
         # Download the data from the URL
@@ -42,12 +41,12 @@ def download_stooq_data(symbol: str):
             raise ValueError(f"Daily limit exceeded for {symbol}.")
 
         # Check if the file was downloaded successfully and is not empty
-        if os.path.isfile(filename) and os.path.getsize(filename) > 0:
+        if os.path.isfile(filepath) and os.path.getsize(filepath) > 0:
             logger.info(f"File downloaded successfully for {symbol} and saved in /parsers/D2/stooq_data_{date_string}/{symbol}_{date_string}.csv")
             return f"File downloaded successfully for {symbol}."
         else:
             # If the file is empty or not found, log a warning and return an error message
-            if os.path.isfile(filename):
+            if os.path.isfile(filepath):
                 logger.warning(f"File is empty for {symbol}.")
                 return f"Failed to download file for {symbol} because file is empty."
             else:

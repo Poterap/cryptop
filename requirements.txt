@@ -6,3 +6,4 @@ Requests>=2.24.0,<3.0.0
 uvicorn==0.22.0
 ydata_profiling==4.1.2
 schedule==1.2.0
+httpx==0.24.0

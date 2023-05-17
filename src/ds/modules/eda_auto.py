@@ -10,7 +10,7 @@ class autoeda:
 
     def make_raport_from_directory(self, folder_path: str):
 
-        output_folder_path = create_folder_in_directory(name='automatic_eda', path=folder_path, add_date=False)
+        output_folder_path = create_folder_in_directory(name='automatic_eda', path_directory=folder_path, add_date=False)
 
         # Get a list of CSV files in the folder
         try:

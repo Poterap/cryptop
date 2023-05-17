@@ -18,7 +18,8 @@ COPY ./requirements.txt /crypto/requirements.txt
 
 RUN pip install --no-cache-dir --upgrade -r /crypto/requirements.txt
 
-COPY ./src/executors/eda/script.py /crypto/src/executors/eda/script.py
+COPY ./src/scheduler/script.py /crypto/src/scheduler/script.py
 COPY ./src/log /crypto/src/log
+COPY ./src/config /crypto/src/config
 
-CMD ["python", "-m", "src.executors.eda.script"]
+CMD ["python", "-m", "src.scheduler.script"]

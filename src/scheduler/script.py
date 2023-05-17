@@ -17,6 +17,7 @@ def main():
     while True:
         schedule.run_pending()
 
+
 def run_job():
     current_time = datetime.datetime.now()
     result = f"Zadanie wykonane o {current_time}"

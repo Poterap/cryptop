@@ -4,6 +4,7 @@ import pandas as pd
 
 from src.log.logger import My_logger
 from src.config.config_reader import read_config
+from src.utils.file_functions import create_folder_in_directory, create_full_file_path
 
 
 config = read_config()
@@ -16,7 +17,9 @@ def download_binance_data(crypto: str, limit: int = config['binance_api']['defau
     
     info_start_date = None
 
-    csv_file_path = f'../parsers/D1/data/binance_{symbol}.csv'
+    dir_path = create_folder_in_directory(name=config['binance_api']['creating_folder']['folder_for_saving_data_name'], path_directory=config['binance_api']['creating_folder']['folder_for_saving_data'], add_date=config['binance_api']['creating_folder']['folder_for_saving_data_is_wuth_dat'])
+
+    csv_file_path = create_full_file_path(symbol, dir_path, True, ".csv")
 
     if os.path.exists(csv_file_path):
         # If the file already exists, read the last timestamp to start from the next minute
