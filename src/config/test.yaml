@@ -43,6 +43,12 @@ binance_api:
     - EOS
     - MKR
 
+pytest:
+  test_refresh_binance_data:
+    symbol: BTC
+  test_refresh_stooq_data:
+    symbol: CCC
+
 stooq_api:
   logger_name: stooq_logger
   logger_path: ./src/log/logs/stooq_api.log

@@ -1,8 +1,13 @@
 import datetime
+import os
 from fastapi.testclient import TestClient
 
 from src.app.main import app
 from src.parsers.D2.stooq_api import get_symbols
+from src.config.config_reader import read_config
+from src.utils.file_functions import create_folder_in_directory, create_full_file_path
+
+config = read_config()
 
 client = TestClient(app)
 
@@ -14,7 +19,8 @@ def test_get_status():
     """
     response = client.get("/status")
     assert response.status_code == 200
-    assert response.json() == {"status": "okey", "timestamp": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")}
+    assert response.json() == {"status": config['my_api']['status_message'], "timestamp": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")}
+
 
 def test_get_symbols_stooq():
     """
@@ -28,20 +34,50 @@ def test_get_symbols_stooq():
 
     assert endpoint_symbols == all_symbols
 
+
 def test_refresh_binance_data():
     """
     Testuje czy endpoint /refresh_binance
     """
+    test_symbol = config['pytest']['test_refresh_binance_data']['symbol']
 
-    test_crypto_symbol = "BTC"
-
-    response = client.get(f"/refresh_binance/{test_crypto_symbol}")
+    response = client.get(f"/refresh_binance/{test_symbol}")
     assert response.status_code == 200
 
     data = response.json()
     assert "message" in data
     assert "info" in data
-    assert data["message"] == f"Data for {test_crypto_symbol} updated successfully"
+    assert data["message"] == f"Data for {test_symbol} updated successfully"
+
+    dir_path = create_folder_in_directory(name=config['binance_api']['creating_folder']['folder_for_saving_data_name'], path_directory=config['binance_api']['creating_folder']['folder_for_saving_data'], add_date=config['binance_api']['creating_folder']['folder_for_saving_data_is_wuth_dat'])
+    file_path = create_full_file_path(test_symbol, dir_path, True, ".csv")
+
+    assert os.path.exists(file_path)
+
+
+def test_refresh_stooq_data():
+    """
+    Testuje czy endpoint /refresh_stooq:
+        - zwraca odpowiedni kod odpowiedzi
+        - zwraca odpowiedznią wiadomość
+        - sprawdza czy plik został pobrany i zapisany w odpowiednim miejscu
+    """
+    test_symbol = config['pytest']['test_refresh_stooq_data']['symbol']
+
+    response = client.get(f"/refresh_stooq/{test_symbol}")
+    assert response.status_code == 200
+
+    data = response.json()
+    assert "message" in data
+    assert "info" in data
+    assert data["message"] == f"Data for {test_symbol} updated successfully"
+
+    dir_path = create_folder_in_directory(name=config['stooq_api']['creating_folder']['folder_for_saving_data_name'], path_directory=config['stooq_api']['creating_folder']['folder_for_saving_data'], add_date=config['stooq_api']['creating_folder']['folder_for_saving_data_is_wuth_dat'])
+    filepath = create_full_file_path(test_symbol, dir_path, True, ".csv")
+
+    assert os.path.exists(filepath)
+
+
 
 
 

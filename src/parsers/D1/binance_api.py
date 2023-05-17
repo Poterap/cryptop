@@ -19,7 +19,7 @@ def download_binance_data(crypto: str, limit: int = config['binance_api']['defau
 
     dir_path = create_folder_in_directory(name=config['binance_api']['creating_folder']['folder_for_saving_data_name'], path_directory=config['binance_api']['creating_folder']['folder_for_saving_data'], add_date=config['binance_api']['creating_folder']['folder_for_saving_data_is_wuth_dat'])
 
-    csv_file_path = create_full_file_path(symbol, dir_path, True, ".csv")
+    csv_file_path = create_full_file_path(crypto, dir_path, True, ".csv")
 
     if os.path.exists(csv_file_path):
         # If the file already exists, read the last timestamp to start from the next minute

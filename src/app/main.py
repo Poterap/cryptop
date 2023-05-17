@@ -31,7 +31,7 @@ async def get_stooq_symbols():
 @app.get("/refresh_binance/{crypto_symbol}")
 async def refresh_binance_data(crypto_symbol: str = Path(..., description="Symbol of cryptocurrency to update eg. BTC or 'allc' for all cryptocurrencies")):
     """
-    Updates data for a specific cryptocurrency or all cryptocurrencies from Binance.
+    Updates data for a specific cryptocurrency or all cryptocurrencies from Binance. The symbol of the cryptocurrency represents the price in USDT.
     """
     try:
         info_list = []
