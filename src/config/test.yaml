@@ -6,7 +6,7 @@ my_api:
 scheduler:
   logger_name: scheduler_logger
   logger_path: ./src/log/logs/schedule.log
-  every_minutes: 1
+  sleep_minutes: 600
 
 binance_api:
   logger_name: binance_logger

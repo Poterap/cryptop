@@ -5,7 +5,7 @@ from fastapi import FastAPI, HTTPException, Path
 import requests
 
 from src.log.logger import My_logger
-from src.parsers.D2.stooq_api import get_symbols, download_stooq_data
+from src.parsers.D2.stooq_api import download_all_stooq_data, get_symbols, download_stooq_data
 from src.parsers.D1.binance_api import download_binance_data
 from src.config.config_reader import read_config
 
@@ -36,10 +36,7 @@ async def refresh_binance_data(crypto_symbol: str = Path(..., description="Symbo
     try:
         info_list = []
         if crypto_symbol.lower() == "allc":
-            cryptos = config['binance_api']['cryptos_symbols_for_binance_api']
-            for crypto in cryptos:
-                info = download_binance_data(crypto=crypto)
-                info_list.append(info)
+            info_list = download_all_stooq_data()
             message = "Data updated successfully for all cryptocurrencies"
             logger.info(message)
             return {"message": message, "info_list": info_list}
@@ -56,17 +53,21 @@ async def refresh_binance_data(crypto_symbol: str = Path(..., description="Symbo
     
 @app.get("/refresh_stooq/{stock_symbol}")
 async def refresh_stooq_data(stock_symbol):
-    info_list = []
-    if stock_symbol.lower() == "alls":
-        for symbol_dict in config['stooq_api']['symbols']:
-            for key in symbol_dict.keys():
-                info = download_stooq_data(key)
-                info_list.append(info)
-        message = "Data updated successfully for all cryptocurrencies"
-        logger.info(message)
-        return {"message": message, "info_list": info_list}
-    else:
-        info = download_stooq_data(stock_symbol)
-        logger.info(f"Data for {stock_symbol} updated successfully")
-        return {"message": f"Data for {stock_symbol} updated successfully", "info": info}
+    try:
+        info_list = []
+        if stock_symbol.lower() == "alls":
+            for symbol_dict in config['stooq_api']['symbols']:
+                for key in symbol_dict.keys():
+                    info = download_stooq_data(key)
+                    info_list.append(info)
+            message = "Data updated successfully for all cryptocurrencies"
+            logger.info(message)
+            return {"message": message, "info_list": info_list}
+        else:
+            info = download_stooq_data(stock_symbol)
+            logger.info(f"Data for {stock_symbol} updated successfully")
+            return {"message": f"Data for {stock_symbol} updated successfully", "info": info}
+    except Exception as e:
+        logger.error(f"An error occurred: {str(e)}")
+        return {"message": f"An error occurred: {str(e)}"}
 

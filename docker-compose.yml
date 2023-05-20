@@ -35,6 +35,8 @@ services:
       target: scheduler
     volumes:
       - ./src/log/logs:/crypto/src/log/logs
+      - ./src/parsers/D2/data:/crypto/src/parsers/D2/data
+      - ./src/parsers/D1/data:/crypto/src/parsers/D1/data
     environment:
       - TZ=Europe/Warsaw
 

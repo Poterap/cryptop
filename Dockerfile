@@ -18,8 +18,6 @@ COPY ./requirements.txt /crypto/requirements.txt
 
 RUN pip install --no-cache-dir --upgrade -r /crypto/requirements.txt
 
-COPY ./src/scheduler/script.py /crypto/src/scheduler/script.py
-COPY ./src/log /crypto/src/log
-COPY ./src/config /crypto/src/config
+COPY ./src /crypto/src
 
 CMD ["python", "-m", "src.scheduler.script"]

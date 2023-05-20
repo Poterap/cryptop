@@ -1,6 +1,6 @@
 import datetime
 import os
-import urllib
+import urllib.request
 from src.log.logger import My_logger
 from src.config.config_reader import read_config
 import csv
@@ -29,7 +29,7 @@ def download_stooq_data(symbol: str):
 
     try:
         # Download the data from the URL
-        urllib.request.urlretrieve(url, filepath)
+        urllib.request.urlretrieve(url, filename=filepath)
 
         # Read the first line of the file
         with open(filepath) as f:
@@ -42,7 +42,7 @@ def download_stooq_data(symbol: str):
 
         # Check if the file was downloaded successfully and is not empty
         if os.path.isfile(filepath) and os.path.getsize(filepath) > 0:
-            logger.info(f"File downloaded successfully for {symbol} and saved in /parsers/D2/stooq_data_{date_string}/{symbol}_{date_string}.csv")
+            logger.info(f"File downloaded successfully for {symbol} and saved in {filepath}")
             return f"File downloaded successfully for {symbol}."
         else:
             # If the file is empty or not found, log a warning and return an error message
@@ -56,3 +56,12 @@ def download_stooq_data(symbol: str):
         # If an exception is raised during the download, log an error and return an error message
         logger.error(f"Error occurred while downloading file for {symbol}: {e}")
         return f"Failed to download file for {symbol}. Error: {e}"
+    
+def download_all_stooq_data():
+    info_list = []
+    for symbol_dict in config['stooq_api']['symbols']:
+            for key in symbol_dict.keys():
+                info = download_stooq_data(key)
+                info_list.append(info)
+                return info_list
+

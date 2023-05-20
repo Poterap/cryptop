@@ -4,13 +4,16 @@ import sys
 import pandas as pd
 import ydata_profiling as pp
 
-from src.utils.file_functions import create_folder_in_directory
+import src.utils.file_functions as uti
 
 class autoeda:
 
     def make_raport_from_directory(self, folder_path: str):
+        """
+        Funcion creates auto eda raports for csv files in given file directory. Raports are saved in html format. 
+        """
 
-        output_folder_path = create_folder_in_directory(name='automatic_eda', path_directory=folder_path, add_date=False)
+        output_folder_path = uti.create_folder_in_directory(name='automatic_eda', path_directory=folder_path, add_date=False)
 
         # Get a list of CSV files in the folder
         try:
@@ -27,7 +30,7 @@ class autoeda:
             # Load the CSV file into a DataFrame
             try:
                 df = pd.read_csv(file)
-            except OSError as error:
+            except Exception as error:
                 print(f"Error reading file '{file}': {error}")
                 continue
 
@@ -39,12 +42,18 @@ class autoeda:
 
 
     def generate_auto_eda_raport(self, df, output_folder_path, file):
+        """
+        Funcion generate auto eda raport, and saves it in given folder 
+        """
+
+        # Gets symbol name from file
+        symbol = os.path.splitext(os.path.basename(file))[0]
 
         # Generate a report with pandas profiling
-        report = pp.ProfileReport(df, title=os.path.splitext(os.path.basename(file))[0])
+        report = pp.ProfileReport(df, title=symbol)
 
         # Save the report to an HTML file in the output folder
-        output_file_path = os.path.join(output_folder_path, os.path.splitext(os.path.basename(file))[0] + '_report.html')
+        output_file_path = os.path.join(output_folder_path, symbol + '_report.html')
 
         try:
             report.to_file(output_file_path)

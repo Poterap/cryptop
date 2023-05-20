@@ -1,4 +1,5 @@
 import datetime
+from src.parsers.D2.stooq_api import download_stooq_data
 import schedule
 import time
 from src.log.logger import My_logger
@@ -12,18 +13,22 @@ logger = My_logger(name=config['scheduler']['logger_name'], filename=config['sch
 
 def main():
 
-    schedule.every(config['scheduler']['every_minutes']).minutes.do(run_job)
+    schedule.every().day.at("10:30").do(run_job)
 
     while True:
         schedule.run_pending()
+        time.sleep(config['scheduler']['sleep_minutes'])
 
 
 def run_job():
-    current_time = datetime.datetime.now()
-    result = f"Zadanie wykonane o {current_time}"
-    print(result)
+    """
+    Downloads data from stooq for all tickers
+    """
 
-    logger.info(result)
+    for symbol_dict in config['stooq_api']['symbols']:
+        for key in symbol_dict.keys():
+            info = download_stooq_data(key)
+            logger.info(info)
 
 if __name__ == "__main__":
     main()
