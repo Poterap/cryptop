@@ -2,6 +2,7 @@ import datetime
 import sys
 
 from fastapi import FastAPI, HTTPException, Path
+from fastapi.responses import FileResponse
 import requests
 
 from src.log.logger import My_logger
@@ -17,6 +18,25 @@ logger = My_logger(name=config['my_api']['logger_name'], filename=config['my_api
 
 app = FastAPI()
 
+from fastapi import FastAPI
+from fastapi.middleware.cors import CORSMiddleware
+
+app = FastAPI()
+
+origins = [
+    "http://localhost",
+    "http://localhost:4200"  # angular
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+
 @app.get("/status")
 async def get_status():
     now = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
@@ -25,6 +45,7 @@ async def get_status():
 
 @app.get("/symbols_stooq")
 async def get_stooq_symbols():
+    logger.info(f"Received GET request for /symbols_stooq")
     return {"symbols": get_symbols()}
 
 
@@ -71,3 +92,19 @@ async def refresh_stooq_data(stock_symbol):
         logger.error(f"An error occurred: {str(e)}")
         return {"message": f"An error occurred: {str(e)}"}
 
+@app.get("/logs/{source}")
+def get_logs(source: str = Path(..., description="Allowed values: 'my_api', 'scheduler', 'binance_api', 'stooq_api'.")):
+    """
+    Get logs file based on the source.
+    """
+    allowed_sources = ['my_api', 'scheduler', 'binance_api', 'stooq_api']
+    
+    if source not in allowed_sources:
+        raise HTTPException(status_code=400, detail="Invalid source provided")
+    
+    file_path = config[source]['logger_path']
+    
+    try:
+        return FileResponse(file_path)
+    except FileNotFoundError:
+        raise HTTPException(status_code=500, detail="Issue with the logs file")
