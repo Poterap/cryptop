@@ -2,6 +2,14 @@ my_api:
   logger_name: api_logger
   logger_path: ./src/log/logs/my_api.log
   status_message: okey
+  sources_for_data:
+    - binance
+    - stooq
+  sources_for_logs:
+    - my_api
+    - scheduler
+    - binance_api
+    - stooq_api
 
 scheduler:
   logger_name: scheduler_logger

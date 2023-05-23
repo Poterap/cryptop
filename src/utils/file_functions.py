@@ -25,4 +25,27 @@ def create_file_name(name: str, add_date: bool = True, file_extension: str = "")
         date_string = datetime.datetime.now().strftime("%Y-%m-%d")
         return f"{name}_{date_string}{file_extension}"
     return f"{name}{file_extension}"
-    
+
+def get_datas_from_folder(folder_path):
+    """
+    Displays the last part of the name of all folders in a directory.
+    """
+    if not os.path.isdir(folder_path):
+        raise ValueError(f"{folder_path} is not a directory.")
+
+    datas = [get_part_of_folder_name(name, -1) for name in os.listdir(folder_path) if os.path.isdir(os.path.join(folder_path, name))]
+    return datas
+
+def get_files_from_folder(folder_path):
+    """
+    Displays the names of files in a directory.
+    """
+    if not os.path.isdir(folder_path):
+        raise ValueError(f"{folder_path} is not a directory.")
+
+    files = [name for name in os.listdir(folder_path) if os.path.isfile(os.path.join(folder_path, name))]
+    return files
+
+def get_part_of_folder_name(name: str, part_number: int):
+     parts = name.split('_')
+     return parts[part_number]

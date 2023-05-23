@@ -16,5 +16,7 @@
         <button class="btn btn-primary" (click)="viewLogs('stooq_api')">Stooq API</button>
     </div>
 
+    <p>{{ errorMsg }}</p>
+
   <pre *ngIf="logs">{{ logs }}</pre>
   
