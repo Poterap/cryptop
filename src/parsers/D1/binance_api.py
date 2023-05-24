@@ -4,7 +4,8 @@ import pandas as pd
 
 from src.log.logger import My_logger
 from src.config.config_reader import read_config
-from src.utils.file_functions import create_folder_in_directory, create_full_file_path
+import src.utils.file_functions as uti
+import src.utils.basic as utib
 
 
 config = read_config()
@@ -17,9 +18,9 @@ def download_binance_data(crypto: str, limit: int = config['binance_api']['defau
     
     info_start_date = None
 
-    dir_path = create_folder_in_directory(name=config['binance_api']['creating_folder']['folder_for_saving_data_name'], path_directory=config['binance_api']['creating_folder']['folder_for_saving_data'], add_date=config['binance_api']['creating_folder']['folder_for_saving_data_is_wuth_dat'])
+    dir_path = uti.create_folder_in_directory(name=config['binance_api']['creating_folder']['folder_for_saving_data_name'], path_directory=config['binance_api']['creating_folder']['folder_for_saving_data'], add_date=config['binance_api']['creating_folder']['folder_for_saving_data_is_with_date'])
 
-    csv_file_path = create_full_file_path(crypto, dir_path, True, ".csv")
+    csv_file_path = uti.create_full_file_path(crypto, dir_path, True, ".csv")
 
     if os.path.exists(csv_file_path):
         # If the file already exists, read the last timestamp to start from the next minute
@@ -94,5 +95,5 @@ def download_binance_data(crypto: str, limit: int = config['binance_api']['defau
     last_date = str(temp_df.iloc[-1]['close_time'])
     info = f"Updated data for {crypto} with {interval} interval from {info_start_date} to {last_date}"
     logger.info(info)
-    uti.print(info)
+    utib.print(info)
     return info

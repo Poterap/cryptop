@@ -1,5 +1,6 @@
 import datetime
 import os
+import src.utils.basic as utib
 
 
 def create_folder_in_directory(name: str, path_directory: str, add_date: bool = True):#
@@ -8,7 +9,7 @@ def create_folder_in_directory(name: str, path_directory: str, add_date: bool = 
         os.makedirs(dir_path, exist_ok=True)
         return dir_path
     except Exception as e:
-            print(f"Error occurred while creating directory: {e}")
+            utib.print(f"Error occurred while creating directory: {e}")
             return None
     
 def create_full_file_path(name: str, dir_path: str, add_date: bool = True, file_extension: str = ""):

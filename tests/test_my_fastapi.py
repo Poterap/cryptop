@@ -49,7 +49,7 @@ def test_refresh_binance_data():
     assert "info" in data
     assert data["message"] == f"Data for {test_symbol} updated successfully"
 
-    dir_path = create_folder_in_directory(name=config['binance_api']['creating_folder']['folder_for_saving_data_name'], path_directory=config['binance_api']['creating_folder']['folder_for_saving_data'], add_date=config['binance_api']['creating_folder']['folder_for_saving_data_is_wuth_dat'])
+    dir_path = create_folder_in_directory(name=config['binance_api']['creating_folder']['folder_for_saving_data_name'], path_directory=config['binance_api']['creating_folder']['folder_for_saving_data'], add_date=config['binance_api']['creating_folder']['folder_for_saving_data_is_with_date'])
     file_path = create_full_file_path(test_symbol, dir_path, True, ".csv")
 
     assert os.path.exists(file_path)
@@ -72,7 +72,7 @@ def test_refresh_stooq_data():
     assert "info" in data
     assert data["message"] == f"Data for {test_symbol} updated successfully"
 
-    dir_path = create_folder_in_directory(name=config['stooq_api']['creating_folder']['folder_for_saving_data_name'], path_directory=config['stooq_api']['creating_folder']['folder_for_saving_data'], add_date=config['stooq_api']['creating_folder']['folder_for_saving_data_is_wuth_dat'])
+    dir_path = create_folder_in_directory(name=config['stooq_api']['creating_folder']['folder_for_saving_data_name'], path_directory=config['stooq_api']['creating_folder']['folder_for_saving_data'], add_date=config['stooq_api']['creating_folder']['folder_for_saving_data_is_with_date'])
     filepath = create_full_file_path(test_symbol, dir_path, True, ".csv")
 
     assert os.path.exists(filepath)

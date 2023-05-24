@@ -25,7 +25,7 @@ binance_api:
   creating_folder:
     folder_for_saving_data: './src/parsers/D1/data'
     folder_for_saving_data_name: 'binance_data'
-    folder_for_saving_data_is_wuth_dat: True
+    folder_for_saving_data_is_with_date: True
   cryptos_symbols_for_binance_api:
     - BTC
     - ETH
