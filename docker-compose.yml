@@ -1,18 +1,29 @@
 version: '3.8'
 
 services:
-#   influxdb:
-#     image: influxdb:latest
-#     ports:
-#       - '8086:8086'
-#     volumes:
-#       - influxdb-storage:/var/lib/influxdb
-#     environment:
-#       - DOCKER_INFLUXDB_INIT_MODE=setup
-#       - DOCKER_INFLUXDB_INIT_USERNAME=admin
-#       - DOCKER_INFLUXDB_INIT_PASSWORD=adminadminadmin
-#       - DOCKER_INFLUXDB_INIT_ORG=my-org 
-#       - DOCKER_INFLUXDB_INIT_BUCKET=my-bucket
+  influxdb:
+    image: influxdb:latest
+    ports:
+      - '8086:8086'
+    volumes:
+      - influxdb-storage:/var/lib/influxdb
+    environment:
+      - DOCKER_INFLUXDB_INIT_MODE=setup
+      - DOCKER_INFLUXDB_INIT_USERNAME=admin
+      - DOCKER_INFLUXDB_INIT_PASSWORD=adminadminadmin
+      - DOCKER_INFLUXDB_INIT_ORG=my-org 
+      - DOCKER_INFLUXDB_INIT_BUCKET=my-bucket
+
+
+  web:
+    build:
+      context: ./src/web/
+      target: builder
+    ports:
+      - 4200:4200
+    volumes:
+      - ./src/web:/project
+      - /project/node_modules
 
   fastapi:
     build:
@@ -28,17 +39,17 @@ services:
     environment:
       - TZ=Europe/Warsaw
 
-  # scheduler:
-  #   build:
-  #     context: .
-  #     dockerfile: Dockerfile
-  #     target: scheduler
-  #   volumes:
-  #     - ./src/log/logs:/crypto/src/log/logs
-  #     - ./src/parsers/D2/data:/crypto/src/parsers/D2/data
-  #     - ./src/parsers/D1/data:/crypto/src/parsers/D1/data
-  #   environment:
-  #     - TZ=Europe/Warsaw
+  scheduler:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: scheduler
+    volumes:
+      - ./src/log/logs:/crypto/src/log/logs
+      - ./src/parsers/D2/data:/crypto/src/parsers/D2/data
+      - ./src/parsers/D1/data:/crypto/src/parsers/D1/data
+    environment:
+      - TZ=Europe/Warsaw
 
 volumes:
   influxdb-storage:

@@ -24,16 +24,26 @@ def main():
 
 def run_job():
     """
-    Downloads data from stooq for all tickers
+    Downloads data from stooq for all tickers and performs auto EDA.
     """
-    # get folder where the files will be saved
-    folder = create_folder_in_directory(name=config['stooq_api']['creating_folder']['folder_for_saving_data_name'], path_directory=config['stooq_api']['creating_folder']['folder_for_saving_data'], add_date=config['stooq_api']['creating_folder']['folder_for_saving_data_is_with_date'])
-    for symbol_dict in config['stooq_api']['symbols']:
-        for key in symbol_dict.keys():
-            info = download_stooq_data(key)
-            logger.info(info)
-    auto_eda = autoeda()
-    auto_eda.make_raport_from_directory(folder)
+    try:
+        # get folder where the files will be saved
+        folder = create_folder_in_directory(
+            name=config['stooq_api']['creating_folder']['folder_for_saving_data_name'],
+            path_directory=config['stooq_api']['creating_folder']['folder_for_saving_data'],
+            add_date=config['stooq_api']['creating_folder']['folder_for_saving_data_is_with_date']
+        )
+        for symbol_dict in config['stooq_api']['symbols']:
+            for key in symbol_dict.keys():
+                info = download_stooq_data(key)
+                logger.info(info)
+        auto_eda = autoeda()
+        logger.info("Performing auto EDA...")
+        auto_eda.make_raport_from_directory(folder)
+        logger.info("Auto EDA completed.")
+    except Exception as e:
+        logger.error(f"An error occurred in run_job(): {str(e)}")
+
 
 if __name__ == "__main__":
     main()

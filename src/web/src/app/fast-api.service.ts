@@ -7,7 +7,7 @@ import { Observable } from 'rxjs';
 })
 export class FastApiService {
   // private apiBaseUrl = 'http://127.0.0.1:8080';
-  private apiBaseUrl = 'http://127.0.0.1:8000';
+  private apiBaseUrl = 'http://127.0.0.1:8080';
 
   constructor(private http: HttpClient) {}
 
