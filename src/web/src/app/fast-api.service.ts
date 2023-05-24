@@ -27,7 +27,7 @@ export class FastApiService {
   }
 
   public getEDAReport(symbol: string, date: string, source: string): Observable<string> {
-    const url = `${this.apiBaseUrl}/data/${symbol}/${date}/${source}`;
+    const url = `${this.apiBaseUrl}/auto_eda_report/${symbol}/${date}/${source}`;
     return this.http.get(url, { responseType: 'text' });
   }
   

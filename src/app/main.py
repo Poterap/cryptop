@@ -59,7 +59,10 @@ async def refresh_binance_data(crypto_symbol: str = Path(..., description="Symbo
     try:
         info_list = []
         if crypto_symbol.lower() == "allc":
-            info_list = download_all_stooq_data()
+            cryptos = config['binance_api']['cryptos_symbols_for_binance_api']
+            for crypto in cryptos:
+                info = download_binance_data(crypto=crypto)
+                info_list.append(info)
             message = "Data updated successfully for all cryptocurrencies"
             logger.info(message)
             return {"message": message, "info_list": info_list}
@@ -76,6 +79,9 @@ async def refresh_binance_data(crypto_symbol: str = Path(..., description="Symbo
     
 @app.get("/refresh_stooq/{stock_symbol}")
 async def refresh_stooq_data(stock_symbol):
+    """
+    Updates data for a specific stock or all stocks from stooq.
+    """
     try:
         info_list = []
         if stock_symbol.lower() == "alls":
@@ -95,35 +101,46 @@ async def refresh_stooq_data(stock_symbol):
         return {"message": f"An error occurred: {str(e)}"}
 
 @app.get("/logs/{source}")
-def get_logs(source: str = Path(..., description="Allowed values: 'my_api', 'scheduler', 'binance_api', 'stooq_api'.")):
+def get_logs(source: str = Path(..., description="Allowed values: 'my_api', 'scheduler', 'binance_api', 'stooq_api'.", regex="my_api|scheduler|binance_api|stooq_api")):
     """
     Get logs file based on the source.
     """
     allowed_sources = config["my_api"]["sources_for_logs"]
-    
+
     if source not in allowed_sources:
+        logger.error(f"Invalid source provided: {source}")
         raise HTTPException(status_code=400, detail="Invalid source provided")
-    
+
     file_path = config[source]['logger_path']
-    
+
     try:
-        return FileResponse(file_path)
+        file_response = FileResponse(file_path)
+        logger.info(f"Successfully returned logs for source: {source}")
+        return file_response
     except FileNotFoundError:
+        logger.error(f"Logs file not found for source: {source}")
         raise HTTPException(status_code=500, detail="Issue with the logs file")
 
 @app.get("/available_eda_raports/{source}")
-def get_folder_names(source: str):
+def get_available_eda_raports(
+    source: str = Path(..., description="Allowed values: 'binance', 'stooq'", regex="binance|stooq")
+):
     """
-    Returns the names of folders in the specified directory based on the source.
+    Returns the names of available_eda_raports
     """
     allowed_sources = config["my_api"]["sources_for_data"]
-    
+
     if source not in allowed_sources:
+        logger.error(f"Invalid source provided: {source}")
         raise HTTPException(status_code=400, detail="Invalid source provided")
 
     folder_path = config[f'{source}_api']['creating_folder']['folder_for_saving_data']
 
-    datas = uti.get_datas_from_folder(folder_path)
+    try:
+        datas = uti.get_datas_from_folder(folder_path)
+    except Exception as e:
+        logger.error(f"Error occurred while fetching folder names: {str(e)}")
+        raise HTTPException(status_code=500, detail="Issue with retrieving folder names")
 
     folder_names = {}
     for date in datas:
@@ -135,12 +152,17 @@ def get_folder_names(source: str):
             continue
         folder_names[date] = raports
 
+    logger.info(f"Successfully retrieved folder names for source: {source}")
     return {"datas": folder_names}
 
-@app.get("/data/{symbol}/{date}/{source}")
-def get_data(symbol: str, date: str, source: str):
+@app.get("/auto_eda_report/{symbol}/{date}/{source}")
+def get_data(
+    symbol: str = Path(..., description="Symbol of wanted currency or stock"),
+    date: str = Path(..., description="Date in format 'YYYY-MM-DD'"),
+    source: str = Path(..., description="Allowed values: 'binance', 'stooq", regex="binance|stooq"),
+):
     """
-    Returns the eda raport for the specified symbol, date and source.
+    Returns the eda report for the specified symbol, date and source.
     """
 
     allowed_sources = config["my_api"]["sources_for_data"]
@@ -155,6 +177,8 @@ def get_data(symbol: str, date: str, source: str):
     file_path = os.path.join(file_path, file_name)
 
     if not os.path.exists(file_path):
+        logger.error(f"Report not found for symbol: {symbol}, date: {date}, source: {source}")
         raise HTTPException(status_code=404, detail="Report not found.")
 
+    logger.info(f"Successfully returned eda report for symbol: {symbol}, date: {date}, source: {source}")
     return FileResponse(file_path, filename=file_name)

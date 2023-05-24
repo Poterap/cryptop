@@ -64,7 +64,7 @@ stooq_api:
   creating_folder:
     folder_for_saving_data: './src/parsers/D2/data'
     folder_for_saving_data_name: 'stooq_data'
-    folder_for_saving_data_is_wuth_dat: True
+    folder_for_saving_data_is_with_date: True
   symbols:
     - 01C: 01CYBERATON SA
     - 06N: MAGNA POLONIA SA

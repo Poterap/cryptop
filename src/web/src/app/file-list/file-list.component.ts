@@ -17,6 +17,7 @@ export class FileListComponent {
   getFolders(source: string) {
     this.fastApiService.getFolders(source).subscribe(
       response => {
+        this.info = source;
         this.source = source;
         this.datas = response.datas;
       },
@@ -27,10 +28,10 @@ export class FileListComponent {
   }
 
   getEdaRaports(file: string) {
-    const parts = file.split('_'); // Podziel nazwę pliku na części za pomocą znaku "_"
+    const parts = file.split('_');
   
-    const symbol = parts[0]; // Pierwsza część to symbol
-    const date = parts[1]; // Druga część to data
+    const symbol = parts[0];
+    const date = parts[1];
 
     this.fastApiService.getEDAReport(symbol, date, this.source).subscribe(
       (html: string) => {
