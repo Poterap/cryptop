@@ -57,6 +57,9 @@ pytest:
   test_refresh_stooq_data:
     symbol: CCC
 
+utils:
+  print: True
+
 stooq_api:
   logger_name: stooq_logger
   logger_path: ./src/log/logs/stooq_api.log

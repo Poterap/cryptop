@@ -94,5 +94,5 @@ def download_binance_data(crypto: str, limit: int = config['binance_api']['defau
     last_date = str(temp_df.iloc[-1]['close_time'])
     info = f"Updated data for {crypto} with {interval} interval from {info_start_date} to {last_date}"
     logger.info(info)
-    print(info)
+    uti.print(info)
     return info

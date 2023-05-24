@@ -10,7 +10,7 @@ from src.log.logger import My_logger
 from src.parsers.D2.stooq_api import download_all_stooq_data, get_symbols, download_stooq_data
 from src.parsers.D1.binance_api import download_binance_data
 from src.config.config_reader import read_config
-import src.utils.file_functions as uti
+import src.utils.file_functions as uti, src.utils.basic as uti
 
 
 config = read_config()

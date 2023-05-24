@@ -4,7 +4,7 @@ import sys
 import pandas as pd
 import ydata_profiling as pp
 
-import src.utils.file_functions as uti
+import src.utils.file_functions as uti, src.utils.basic as uti
 
 class autoeda:
 
@@ -19,23 +19,23 @@ class autoeda:
         try:
             csv_files = glob.glob(os.path.join(folder_path, '*.csv'))
         except OSError as error:
-            print(f"Error getting list of CSV files: {error}")
+            uti.print(f"Error getting list of CSV files: {error}")
             exit(1)
 
-        print(csv_files)
+        uti.print(csv_files)
 
         # Iterate over each CSV file and generate a report
         for file in csv_files:
-            print(file)
+            uti.print(file)
             # Load the CSV file into a DataFrame
             try:
                 df = pd.read_csv(file)
             except Exception as error:
-                print(f"Error reading file '{file}': {error}")
+                uti.print(f"Error reading file '{file}': {error}")
                 continue
 
             if df.empty:
-                print(f"Warning: Empty CSV file '{file}'. Skipping.")
+                uti.print(f"Warning: Empty CSV file '{file}'. Skipping.")
                 continue
 
             self.generate_auto_eda_raport(df, output_folder_path, file)
@@ -58,7 +58,7 @@ class autoeda:
         try:
             report.to_file(output_file_path)
 
-            print(output_file_path)
+            uti.print(output_file_path)
         except OSError as error:
-            print(f"Error saving report to file '{output_file_path}': {error}")
+            uti.print(f"Error saving report to file '{output_file_path}': {error}")
                 
